@@ -19,11 +19,11 @@ Modde (Mobile Oriented Drag&Drop Engine)
 
 **Zespół:**
 
-| Imię i nazwisko | Rola główna | Kontakt / login repozytorium |
-| Arsenii Liapin  | Project manager / Runtime |
-| Daryna Melnyk   | Dokumentacja / tester     |
-| Daryna Kotiash  | Graphic designer          |
-| Bekzigit Kuatbek| Editor                    |                |
+| Imię i nazwisko | Rola główna | Kontakt / login repozytorium          |
+| Arsenii Liapin  | Project manager / Runtime | LiapinArsenii           |
+| Daryna Melnyk   | Dokumentacja / tester     | melnukdarina1111-blip   |
+| Daryna Kotiash  | Graphic designer          | daritiash               |
+| Bekzigit Kuatbek| Editor                    | kuatbekulybeles-sketch  |
 
 ---
 
@@ -53,8 +53,6 @@ Celem systemu jest mobilny, polskojęzyczny edytor gier oparty na klockach, któ
 
 ## 5. Użytkownicy systemu
 
-## 5. Użytkownicy systemu
-
 | Użytkownik / rola | Do czego będzie używał systemu? |
 |---|---|
 | Twórca gier | Układa program z klocków, testuje swoją grę i eksportuje ją. |
@@ -64,12 +62,16 @@ Celem systemu jest mobilny, polskojęzyczny edytor gier oparty na klockach, któ
 
 ## 6. Interesariusze
 
-| Interesariusz | Dlaczego system jest dla niego istotny? |
-|---|---|
-| | |
-| | |
-| | |
-| | |
+| Interesariusz                     | Dlaczego system jest dla niego istotny? |
+|-----------------------------------|-----------------------------------------|
+| Prowadzący zajęcia / Nauczyciel   | Otrzymuje gotowe narzędzie dydaktyczne, które może wdrożyć na lekcjach bez konieczności
+                                    | posiadania przez szkołę pracowni komputerowej.
+| Rodzice                           | Zyskują bezpieczną i edukacyjną alternatywę dla bezmyślnego spędzania czasu na telefonie  
+                                    | przez dzieci (nauka przez twórczość).
+| Twórcy platform edukacyjnych      | Mogą traktować system jako uzupełnienie materiałów do nauki podstaw informatyki i 
+                                    | logiki.
+| Społeczność Open Source           | Otrzymuje projekt silnika, który w przyszłości można rozwijać, tłumaczyć na inne języki i 
+                                    | rozbudowywać o nowe klocki.
 
 ---
 
@@ -77,13 +79,13 @@ Celem systemu jest mobilny, polskojęzyczny edytor gier oparty na klockach, któ
 
 Co system **będzie** realizował?
 
-1. ................................................................................
-2. ................................................................................
-3. ................................................................................
-4. ................................................................................
-5. ................................................................................
-6. ................................................................................
-7. ................................................................................
+1. Mobilny interfejs edytora (UI) przystosowany do ekranów dotykowych (smartfony i tablety).
+2. System "Drag and drop" do układania klocków logicznych i instrukcji.
+3. Środowisko uruchomieniowe (runtime) do wykonywania logiki gry napisane w Pythonie.
+4. Podstawowa biblioteka gotowych obiektów graficznych i sprite'ów do użycia w grach.
+5. Mechanizm testowania/podglądu tworzonej gry bezpośrednio na urządzeniu mobilnym.
+6. Możliwość zapisywania i wczytywania projektu gry w pliku lokalnym.
+7. Polskojęzyczny interfejs oraz komunikaty o błędach dostosowane dla początkujących.
 
 ---
 
@@ -91,11 +93,11 @@ Co system **będzie** realizował?
 
 Czego system **nie będzie** realizował?
 
-1. ................................................................................
-2. ................................................................................
-3. ................................................................................
-4. ................................................................................
-5. ................................................................................
+1. Zaawansowanego wsparcia dla grafiki 3D (silnik obsługuje wyłącznie 2D).
+2. Kompilacji gry do natywnych plików .apk lub .ipa z poziomu telefonu (eksport tylko do formatu projektu).
+3. Wbudowanego sklepu z grami lub serwerowej chmury do hostowania i udostępniania gier online.
+4. Zaawansowanego systemu multiplayer (gry będą w pełni lokalne, jednoosobowe).
+5. Pełnoprawnego edytora kodu tekstowego (wszystko odbywa się za pomocą bloków wizualnych).
 
 ---
 
@@ -103,16 +105,16 @@ Czego system **nie będzie** realizował?
 
 Wymieńcie maksymalnie 10 funkcji.
 
-1. ................................................................................
-2. ................................................................................
-3. ................................................................................
-4. ................................................................................
-5. ................................................................................
-6. ................................................................................
-7. ................................................................................
-8. ................................................................................
-9. ................................................................................
-10. ...............................................................................
+1. Wizualny edytor klocków: Łączenie bloków logicznych (ruch, warunki, pętle) metodą przeciągnij i upuść.
+2. Paleta zasobów: Wybór i dodawanie postaci, tła oraz elementów otoczenia do sceny.
+3. Edytor sceny (Scene Editor): Rozmieszczanie obiektów na planszy za pomocą dotyku.
+4. Tryb podglądu (Play Mode): Natychmiastowe uruchomienie gry w celu przetestowania napisanego skryptu.
+5. System zmiennych i warunków: Proste operacje logiczne ułatwiające naukę algorytmów.
+6. Zapis i odczyt projektu: Serializowanie stanu gry do pliku w późniejszej edycji.
+7. Obsługa zdarzeń dotykowych: Reagowanie gry na kliknięcia, przeciąganie i gesty gracza.
+8. Zarządzanie pętlą gry (Game Loop): Kontrolowanie czasu i klatek animacji w module runtime.
+9. Polskojęzyczne podpowiedzi i błędy: Wyjaśnianie błędów logicznych w kodzie blokowym w czytelnym dla ucznia języku.
+10. Modułowa architektura: Czysty podział na logikę, interfejs i renderer ułatwiający pracę zespołową.
 
 ---
 
@@ -128,13 +130,11 @@ Przykład:
 
 Dla naszego systemu:
 
-1. ................................................................................
-2. ................................................................................
-3. ................................................................................
-4. ................................................................................
-5. ................................................................................
-
----
+1. Projekt gry (Project): Główny kontener przechowujący metadane, sceny i ustawienia całej gry.
+2. Scena (Scene): Plansza lub poziom, na którym rozmieszczone są obiekty w danym momencie.
+3. Obiekt gry (GameObject / Sprite): Element graficzny na scenie posiadający pozycję (x, y) i przypisane skrypty.
+4. Klocek / Skrypt (Block / Behavior): Pojedyncza instrukcja logiczna lub struktura sterująca (np. "jeśli dotknięto, to...").
+5. Zmienna (Variable): Przechowywana w grze wartość (np. wynik punktowy, stan zdrowia gracza).
 
 ## 11. Główne założenia
 
