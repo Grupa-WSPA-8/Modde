@@ -11,19 +11,19 @@
 
 **Nazwa projektu:**
 
-System monitorowania urządzeń IoT 
+Mobilny silnik gier typu „Drag and drop” do nauki programowania
 
 **Krótka nazwa / akronim:**
 
-Oko Domu
+Modde (Mobile Oriented Drag&Drop Engine)
 
 **Zespół:**
 
 | Imię i nazwisko | Rola główna | Kontakt / login repozytorium |
-| Arsenii Liapin  | Project manager / backend |
+| Arsenii Liapin  | Project manager / Runtime |
 | Daryna Melnyk   | Dokumentacja / tester     |
-| Daryna Kotiash  | Graphic designer                  |
-| Bekzigit Kuatbek| Frontend |                |
+| Daryna Kotiash  | Graphic designer          |
+| Bekzigit Kuatbek| Editor                    |                |
 
 ---
 
@@ -31,39 +31,34 @@ Oko Domu
 
 ### Jaki problem chcemy rozwiązać?
 
-Opiszcie problem w 3–6 zdaniach.
-
-Nie opisujcie jeszcze technologii.
-
-Inteligentny dom to dziś 5-8 osobnych aplikacji i zero jednego widoku całości. Potrzebny jest jeden, polskojęzyczny portal, który zbierze wszystkie urządzenia w jednym miejscu
+Narzędzia do nauki programowania przez tworzenie gier są projektowane głównie pod komputer, a wielu młodych ludzi ma na co dzień tylko telefon. Brakuje wygodnego, mobilnego edytora, w którym początkujący stworzy własną grę i nauczy się podstaw algorytmów.
 
 ---
 
 ## 3. Kogo dotyczy problem?
 
-Problem dotyczy każdego, kto ma w domu więcej niż jedno inteligentne urządzenie:
+Problem dotyczy każdego, kto chce zacząć uczyć się programowania, a nie ma pod ręką komputera:
 
-- Rodziny i właściciele domów: alarm, kamery i AGD od różnych producentów, a każde w osobnej aplikacji.
-- Osoby starsze i ich opiekunowie**: potrzebują jednego prostego widoku, czy w domu wszystko jest w porządku.
-- Osoby często wyjeżdżające: chcą zdalnie sprawdzić cały dom w jednym miejscu.
+- Uczniowie szkół podstawowych i średnich: chcą tworzyć własne gry, ale mają głównie telefon.
+- Nauczyciele i prowadzący zajęcia: potrzebują narzędzia, które uczniowie mogą uruchomić na własnych urządzeniach.
+- Początkujący hobbyści: chcą spróbować swoich sił w tworzeniu gier bez instalowania ciężkiego oprogramowania.
 
 ---
 
 ## 4. Cel systemu
 
-Dokończcie zdanie:
-
-> Celem systemu jest jeden polskojęzyczny portal, który łączy urządzenia różnych producentów, pokazuje stan domu i zbiera wszystkie powiadomienia w jednym miejscu.
+Celem systemu jest mobilny, polskojęzyczny edytor gier oparty na klockach, który pozwala początkującym tworzyć własne gry na telefonie i uczyć się przy tym podstaw algorytmów.
 
 ---
 
 ## 5. Użytkownicy systemu
 
+## 5. Użytkownicy systemu
+
 | Użytkownik / rola | Do czego będzie używał systemu? |
 |---|---|
-| Domownik          | Podgląd i sterowanie urządzeniami oraz odbieranie powiadomień w jednym miejscu. |
-| Opiekun           | Zdalne sprawdzanie stanu domu osoby starszej. |
-| Administrator     | Dodawanie urządzeń i zarządzanie kontami oraz uprawnieniami. |
+| Twórca gier | Układa program z klocków, testuje swoją grę i eksportuje ją. |
+| Odbiorca gry| Otwiera wyeksportowaną grę i w nią gra. |
 
 ---
 
