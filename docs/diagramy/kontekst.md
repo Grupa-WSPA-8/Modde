@@ -2,7 +2,6 @@
 
 System Modde pokazany jako jedna całość, z rolami użytkowników i elementami zewnętrznymi, z którymi wymienia informacje.
 
-````markdown
 ```mermaid
 flowchart LR
     T([Twórca gier])
@@ -19,7 +18,7 @@ flowchart LR
     U -->|dostarcza plik gry| O
     G -->|dostarczają postacie i tła| S
 ```
-````
+
 
 ## Opis
 
