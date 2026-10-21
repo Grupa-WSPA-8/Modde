@@ -25,10 +25,10 @@ Wywiad z klientem odbędzie się na zajęciach 3. Klient: nauczyciel informatyki
 
 ## Pytania: Daryna M. (użytkownicy i ograniczenia)
 
-1. 
-2. 
-3. 
-4. 
+1. Jak wygląda standardowe wyposażenie technologiczne uczniów, z którymi prowadzi Pan/Pani zajęcia?
+2. Jakie są największe przeszkody lub rozpraszacze, z którymi zmagają się uczniowie podczas korzystania z własnych urządzeń na lekcji?
+3. W jaki sposób uczniowie o różnym poziomie umiejętności radzą sobie z frustracją, gdy ich projekt nie działa zgodnie z oczekiwaniami?
+4. Ile czasu realnie są w stanie poświęcić uczniowie na jedno zadanie bez utraty zaangażowania?
 
 ## Pytania: Daryna K. (dane i odbiór gry)
 
