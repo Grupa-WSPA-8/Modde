@@ -21,10 +21,12 @@
 
 ## Terminy: Daryna M.
 
-| Termin | Definicja | Synonimy / nie mylić z | Przykład | Powiązane terminy |
-| ------ | --------- | ---------------------- | -------- | ----------------- |
-|        |           |                        |          |                   |
-
+| Termin              | Definicja                                                                                                                                                     | Synonimy / nie mylić z                                                         | Przykład                                                                                     | Powiązane terminy                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Scena               | Obszar roboczy lub ekran w grze, na którym umieszczane są obiekty gry (tła, postacie) i na którym toczy się rozgrywka.                                        | plansza, poziom / nie mylić z: ekranem edytora                                 | Twórca tworzy nową scenę „Las”, na której ustawia drzewa i przeciwników.                     | Obiekt gry, Silnik, Wyeksportowana gra |
+| Klatka              | Pojedynczy krok odświeżania gry w czasie (np. jedna z 60 klatek na sekundę), w którym silnik przelicza logikę (ruch, kolizje) i rysuje nowy obraz na ekranie. | frame, krok / nie mylić z: klatką animacji konkretnej postaci                  | Zdarzenie „w każdej klatce” sprawia, że postać gracza przesuwa się stale o 1 piksel w prawo. | Zdarzenie, Silnik                      |
+| Sterowanie dotykowe | Sposób interakcji z grą za pomocą dotykania ekranu telefonu (np. tapnięcie, przesunięcie palcem), wywołujący określone zdarzenia.                             | obsługa dotyku / nie mylić z: sterowaniem myszką lub klawiaturą                | Gracz dotyka lewej strony ekranu, co powoduje ruch obiektu w lewo.                           | Zdarzenie, Obiekt gry, Odbiorca gry    |
+| Wyeksportowana gra  | Gotowy plik zawierający cały projekt gry, który można zapisać, udostępnić innej osobie i uruchomić na innym urządzeniu.                                       | gotowy projekt, plik gry / nie mylić z: natywną aplikacją (np. .apk ze sklepu) | Twórca kończy projekt, generuje wyeksportowaną grę i wysyła koledze do przetestowania.       | Odbiorca gry, Twórca gier, Projekt gry |
 
 ## Terminy: Daryna K.
 
