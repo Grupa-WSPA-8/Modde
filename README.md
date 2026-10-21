@@ -6,13 +6,13 @@ Projekt powstaje w ramach zajęć „Projekt zespołowy systemu informatycznego"
 
 ## Zespół
 
-| Osoba            | Główna odpowiedzialność                                       | Login                   |
-| ---------------- | ------------------------------------------------------------- | ----------------------- |
-| Arsenii Liapin   | koordynacja projektu, interpreter, architektura, dokumentacja | @LiapinArsenii          |
-| Bekzigit Kuatbek | edytor                                                        | @kuatbekulybeles-sketch |
-| Daryna Melnyk    | runner (wyświetlanie gry), testy                              | @melnukdarina1111-blip  |
-| Daryna Kotiash   | projekt graficzny i UI                                        | @daritiash              |
-
+| Osoba              | Główna odpowiedzialność                                       | Login                   |
+| ------------------ | ------------------------------------------------------------- | ----------------------- |
+| Arsenii Liapin     | koordynacja projektu, interpreter, architektura, dokumentacja | @LiapinArsenii          |
+| Bekzigit Kuatbek   | edytor                                                        | @kuatbekulybeles-sketch |
+| Daryna Melnyk      | runner (wyświetlanie gry), testy                              | @melnukdarina1111-blip  |
+| Daryna Kotiash     | projekt graficzny i UI                                        | @daritiash              |
+| Temirlan Kalibekov | zapis i eksport projektów, model danych                       | @timakalibekov          |
 ## Dokumentacja
 
 - [Karta projektu](docs/01-karta-projektu.md)
@@ -31,6 +31,7 @@ Zob. [ADR-001](docs/adr/ADR-001-narzedzia.md).
 - `editor/`: edytor programów z klocków
 - `interpreter/`: wykonywanie programów ułożonych z klocków
 - `runner/`: wyświetlanie gry na ekranie
+- `storage/`: zapis, wczytywanie i eksport projektów
 - `contract/`: uzgodnione formaty danych między częściami systemu
 - `design/`: grafika i makiety
 
