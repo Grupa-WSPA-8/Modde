@@ -34,15 +34,15 @@ Narzędzia do nauki programowania przez tworzenie gier są projektowane główni
 
 Problem dotyczy każdego, kto chce zacząć uczyć się programowania, a nie ma pod ręką komputera:
 
-- **Uczniowie szkół podstawowych i średnich:** chcą tworzyć własne gry, ale mają głównie telefon.
-- **Nauczyciele i prowadzący zajęcia:** potrzebują narzędzia, które uczniowie mogą uruchomić na własnych urządzeniach.
+- **Uczniowie starszych klas szkoły podstawowej i szkół średnich (ok. 12-19 lat):** chcą zacząć uczyć się programowania i algorytmów przez tworzenie własnych gier, ale mają głównie telefon.
+- **Nauczyciele informatyki:** potrzebują narzędzia, które pomoże wprowadzić uczniów w algorytmy i programowanie, np. przed nauką Pythona.
 - **Początkujący hobbyści:** chcą spróbować swoich sił w tworzeniu gier bez instalowania ciężkiego oprogramowania.
 
 ---
 
 ## 4. Cel systemu
 
-Celem systemu jest mobilny, polskojęzyczny edytor gier oparty na klockach, który pozwala początkującym tworzyć własne gry na telefonie i uczyć się przy tym podstaw algorytmów.
+Celem systemu jest umożliwienie początkującym uczniom samodzielnego tworzenia prostych gier 2D na telefonie lub komputerze oraz ograniczenie bariery wejścia w naukę programowania i algorytmów.
 
 ---
 
@@ -57,13 +57,13 @@ Celem systemu jest mobilny, polskojęzyczny edytor gier oparty na klockach, któ
 
 ## 6. Interesariusze
 
-| Interesariusz | Dlaczego system jest dla niego istotny? |
-|---|---|
-| **Nauczyciele informatyki / prowadzący zajęcia** | Mogą wykorzystać edytor na lekcjach, ale nie mają w nim osobnej roli. |
-| **Rodzice i opiekunowie** | Chcą, by dziecko uczyło się w bezpiecznym narzędziu, które nie zbiera danych. |
-| **Szkoły** | Potrzebują narzędzia, które działa na telefonach uczniów i nie wymaga instalacji na komputerach. |
-| **Prowadzący przedmiot** | Ocenia projekt i zatwierdza jego zakres. |
-| **Zespół projektowy** | Odpowiada za zaprojektowanie i wykonanie systemu. |
+| Interesariusz                                    | Dlaczego system jest dla niego istotny?                                                                                                                             |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nauczyciele informatyki / prowadzący zajęcia** | Mogą wykorzystać silnik na lekcjach, ale nie mają w nim osobnej roli.                                                                                               |
+| **Rodzice i opiekunowie**                        | Chcą, by dziecko uczyło się w bezpiecznym narzędziu, które nie zbiera danych.                                                                                       |
+| **Szkoły**                                       | Potrzebują narzędzia do nauki algorytmów, z którego uczniowie mogą korzystać także poza lekcją na własnych telefonach, a w razie potrzeby na szkolnych komputerach. |
+| **Prowadzący przedmiot**                         | Ocenia projekt i zatwierdza jego zakres.                                                                                                                            |
+| **Zespół projektowy**                            | Odpowiada za zaprojektowanie i wykonanie systemu.                                                                                                                   |
 
 ---
 
@@ -75,10 +75,11 @@ Co system **będzie** realizował?
 2. Stały zestaw klocków niskiego poziomu (ok. 20): zmienne, pozycja x i y, warunki, pętle, zdarzenia oraz sprawdzanie kolizji (w stylu „czy w tym miejscu jest obiekt typu X?").
 3. Interpreter wykonujący program ułożony z klocków.
 4. Runner rysujący wynik działania programu na ekranie (sceny 2D, postacie, tła).
-5. biekty gry 2D z grafiką, położeniem x i y oraz własnymi zmiennymi, umieszczane w scenie, ze sterowaniem dotykowym.
+5. Obiekty gry 2D z grafiką, położeniem x i y oraz własnymi zmiennymi, umieszczane w scenie, ze sterowaniem dotykowym.
 6. Zapis i wczytywanie projektów lokalnie na urządzeniu użytkownika.
 7. Eksport gotowej gry do pliku, który można otworzyć i uruchomić na innym telefonie.
 8. Dwa gotowe przykładowe projekty (gra z widokiem z góry i prosta platformówka) pokazujące możliwości silnika.
+9. Uruchamianie tej samej aplikacji także na komputerze, bez osobnego interfejsu.
 
 ---
 
@@ -92,7 +93,7 @@ Czego system **nie będzie** realizował?
 4. Panelu nauczyciela i zarządzania klasą.
 5. Gier 3D i zaawansowanej fizyki.
 6. Trybu wieloosobowego.
-7. Natywnych aplikacji i publikacji w sklepach z aplikacjami.
+7. Publikacji w sklepach z aplikacjami (np. Google Play).
 8. Gotowego systemu ruchu i fizyki (grawitacja, skoki): użytkownik buduje je sam z klocków. Ewentualnie jako rozszerzenie, jeśli starczy czasu.
 
 ---
@@ -128,9 +129,9 @@ Dla naszego systemu:
 
 - Zakładamy, że użytkownik nie zakłada konta, a projekty zapisuje wyłącznie lokalnie na własnym urządzeniu.
 - Zakładamy, że system nie zbiera ani nie przetwarza danych osobowych.
-- Zakładamy, że użytkownik ma telefon z nowoczesną przeglądarką, w której działa aplikacja.
+- Zakładamy, że użytkownik ma telefon z systemem Android lub komputer, na którym można uruchomić aplikację.
 - Zakładamy gotowy, ograniczony zestaw grafik przygotowany przez zespół lub pochodzący z otwartych źródeł.
-- Zakładamy jeden szablon gry 2D oraz stały zestaw klocków, bez możliwości dodawania własnych.
+- Zakładamy prosty model obiektów 2D (grafika, położenie, zmienne) oraz stały zestaw klocków, bez możliwości dodawania własnych.
 - Zakładamy interfejs wyłącznie w języku polskim.
 
 ---
@@ -144,16 +145,17 @@ Dla naszego systemu:
 | **Zależności między częściami systemu**                      | Zmiana formatu programu lub danych do wyświetlenia psuje pracę pozostałych osób. Ograniczamy to wspólnym, opisanym kontraktem między częściami.                                                        |
 | **Nierówne obciążenie i różne doświadczenie zespołu**        | Kluczowe części systemu opierają się na jednej lub dwóch osobach. Ograniczamy to małym zakresem i jasnym podziałem zadań.                                                                              |
 | **Wydajność na słabszych telefonach**                        | Błędny lub zbyt rozbudowany program użytkownika może zawiesić grę lub przeglądarkę.                                                                                                                    |
+| **Ograniczony dostęp do urządzeń w szkołach**                | Uczniowie często nie mogą używać telefonów na lekcji, a szkolne komputery mogą blokować instalację programów.                                                                                          |
 
 ---
 
 ## 13. Wstępnie rozważane technologie
 
-Ta część nie jest najważniejsza na tym etapie. Poniżej zapisano technologie rozważane wstępnie. Ostateczny wybór zostanie potwierdzony po wykonaniu prototypu i zapisany w ADR-001.
+Ta część nie jest najważniejsza na tym etapie. Poniżej zapisano technologie rozważane wstępnie. Ostateczny wybór zostanie potwierdzony po wykonaniu prototypu i zapisany w ADR-002.
 
 Platforma:
 
-Aplikacja na system Android. Na etapie prac rozwojowych możliwość uruchamiania także na komputerze.
+Aplikacja na system Android oraz na komputer (ta sama aplikacja).
 
 Język programowania:
 
