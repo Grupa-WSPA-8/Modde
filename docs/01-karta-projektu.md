@@ -80,6 +80,7 @@ Co system **będzie** realizował?
 7. Eksport gotowej gry do pliku, który można otworzyć i uruchomić na innym telefonie.
 8. Dwa gotowe przykładowe projekty (gra z widokiem z góry i prosta platformówka) pokazujące możliwości silnika.
 9. Uruchamianie tej samej aplikacji także na komputerze, bez osobnego interfejsu.
+10. Interfejs użytkownika (UI) musi być różowy (pani Daryna Melnyk zmusiła mnie, żebym to dodał)
 
 ---
 
