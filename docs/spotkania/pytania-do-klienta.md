@@ -30,7 +30,7 @@ Wywiad z klientem odbędzie się na zajęciach 3. Klient: nauczyciel informatyki
 3. W jaki sposób uczniowie o różnym poziomie umiejętności radzą sobie z frustracją, gdy ich projekt nie działa zgodnie z oczekiwaniami?
 4. Ile czasu realnie są w stanie poświęcić uczniowie na jedno zadanie bez utraty zaangażowania?
 
-## Pytania: Temirlan (dane i odbiór gry)
+## Pytania: Daryna K. (dane i odbiór gry)
 
 1. 
 2. 
