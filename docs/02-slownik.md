@@ -50,11 +50,14 @@ Wersja: 0.3 (po wywiadzie 1)
 ## Terminy: Temirlan
 
 | Termin | Definicja | Synonimy (u klienta) | Homonimy / nie mylić z | Przykład | Powiązane terminy | Źródło |
-| ------ | --------- | -------------------- | ---------------------- | -------- | ----------------- | ------ |
+|--------|-----------|----------------------|------------------------|----------|-------------------|--------|
 |        |           |                      |                        |          |                   |        |
 
 **Stary format: do przeniesienia do tabeli powyżej w osobnej karcie.**
 
-| Termin | Definicja | Synonimy / nie mylić z | Przykład | Powiązane terminy |
-| ------ | --------- | ---------------------- | -------- | ----------------- |
-|        |           |                        |          |                   |
+| Termin           | Definicja                                                                                                                              | Synonimy / nie mylić z                                                                      | Przykład                                                                                          | Powiązane terminy                     |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------|
+| Postać           | Bohater gry, którym steruje gracz lub który porusza się sam, np. rycerz zbierający monety.                                             | bohater; nie mylić z: Odbiorca gry (to osoba grająca, a nie element gry)                    | W grze o rycerzu postać skacze po dotknięciu ekranu i zbiera monety.                              | Obiekt gry, Grafika obiektu, Scena    |
+| Tło              | Obraz widoczny za wszystkimi elementami gry, który pokazuje, gdzie dzieje się akcja, np. las albo zamek.                               | obraz w tle; nie mylić z: Scena (scena to cały ekran gry, a tło to tylko jego obraz)        | Twórca wybiera dla sceny „Las” tło z drzewami, a bohater porusza się przed nim.                   | Scena, Biblioteka grafik, Obiekt gry  |
+| Grafika obiektu  | Wygląd elementu gry, czyli obrazek, który gracz widzi na ekranie, np. rysunek rycerza lub monety.                                      | obrazek, wygląd; nie mylić z: Obiekt gry (obiekt ma też położenie i zmienne)                | Twórca zmienia wygląd obiektu „Gracz” z rycerza na kosmonautę, a zasady gry zostają takie same.   | Obiekt gry, Biblioteka grafik, Postać |
+| Biblioteka grafik | Gotowy zbiór obrazków postaci i teł, z którego twórca wybiera wygląd do swojej gry, zamiast rysować go samodzielnie.                  | zestaw grafik, galeria obrazków; nie mylić z: własne rysunki twórcy                         | Twórca otwiera bibliotekę i wybiera obrazek smoka dla przeciwnika.                                | Grafika obiektu, Postać, Tło          |
