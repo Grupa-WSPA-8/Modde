@@ -7,7 +7,7 @@ Projekt powstaje w ramach zajęć „Projekt zespołowy systemu informatycznego"
 ## Zespół
 | Osoba              | Główna odpowiedzialność                                                        | Login                   |
 | ------------------ | ------------------------------------------------------------------------------ | ----------------------- |
-| Arsenii Liapin     | koordynacja projektu, architektura, dokumentacja, rdzeń interpretera i edytora | @LiapinArsenii          |
+| Arsenii Liapin     | koordynacja projektu, architektura, dokumentacja, jądro interpretera i edytora | @LiapinArsenii          |
 | Bekzigit Kuatbek   | Elementy pierwotne edytora i interpretera                                      | @kuatbekulybeles-sketch |
 | Daryna Melnyk      | runner (wyświetlanie gry), testy                                               | @melnukdarina1111-blip  |
 | Daryna Kotiash     | projekt graficzny i UI                                                         | @daritiash              |
