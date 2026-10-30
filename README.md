@@ -5,20 +5,19 @@ Modde to mobilny, polskojęzyczny silnik gier oparty na klockach. Pozwala począ
 Projekt powstaje w ramach zajęć „Projekt zespołowy systemu informatycznego".
 
 ## Zespół
-
-| Osoba              | Główna odpowiedzialność                                       | Login                   |
-| ------------------ | ------------------------------------------------------------- | ----------------------- |
-| Arsenii Liapin     | koordynacja projektu, interpreter, architektura, dokumentacja | @LiapinArsenii          |
-| Bekzigit Kuatbek   | edytor                                                        | @kuatbekulybeles-sketch |
-| Daryna Melnyk      | runner (wyświetlanie gry), testy                              | @melnukdarina1111-blip  |
-| Daryna Kotiash     | projekt graficzny i UI                                        | @daritiash              |
-| Temirlan Kalibekov | zapis i eksport projektów, model danych                       | @timakalibekov          |
+| Osoba              | Główna odpowiedzialność                                                        | Login                   |
+| ------------------ | ------------------------------------------------------------------------------ | ----------------------- |
+| Arsenii Liapin     | koordynacja projektu, architektura, dokumentacja, rdzeń interpretera i edytora | @LiapinArsenii          |
+| Bekzigit Kuatbek   | Elementy pierwotne edytora i interpretera                                      | @kuatbekulybeles-sketch |
+| Daryna Melnyk      | runner (wyświetlanie gry), testy                                               | @melnukdarina1111-blip  |
+| Daryna Kotiash     | projekt graficzny i UI                                                         | @daritiash              |
+| Temirlan Kalibekov | zapis i eksport projektów, model danych                                        | @timakalibekov          |
 ## Dokumentacja
 
 - [Karta projektu](docs/01-karta-projektu.md)
 - [Słownik](docs/02-slownik.md)
 - [Wymagania](docs/03-wymagania.md)
-- [Diagram kontekstu](docs/diagramy/kontekst.md)
+- [Diagram kontekstu](docs/06-architektura/kontekst.md)
 - [Decyzje projektowe (ADR)](docs/adr/)
 
 ## Narzędzia
@@ -29,7 +28,9 @@ Zob. [ADR-001](docs/adr/ADR-001-narzedzia.md).
 
 - `docs/`: dokumentacja projektu
 - `editor/`: edytor programów z klocków
+- `editor/blocks/`: Elementy pierwotne edytora
 - `interpreter/`: wykonywanie programów ułożonych z klocków
+- `interpreter/blocks/`: Elementy pierwotne interpretera
 - `runner/`: wyświetlanie gry na ekranie
 - `storage/`: zapis, wczytywanie i eksport projektów
 - `contract/`: uzgodnione formaty danych między częściami systemu
