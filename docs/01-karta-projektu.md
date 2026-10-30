@@ -12,13 +12,14 @@ Modde (Mobile Oriented Drag&Drop Engine)
 
 **Zespół:**
 
-| Imię i nazwisko    | Rola główna                                                 | Kontakt / login repozytorium |
-| ------------------ | ----------------------------------------------------------- | ---------------------------- |
-| Arsenii Liapin     | Project manager / interpreter / architektura / dokumentacja | @LiapinArsenii               |
-| Bekzigit Kuatbek   | Edytor (edytor programów z klocków)                         | @kuatbekulybeles-sketch      |
-| Daryna Melnyk      | Runner (wyświetlanie gry) / testy                           | @melnukdarina1111-blip       |
-| Daryna Kotiash     | Projektant graficzny / UI                                   | @daritiash                   |
-| Temirlan Kalibekov | Zapis i eksport projektów (storage) / model danych          | @timakalibekov               |
+
+| Imię i nazwisko    | Rola główna                                                                  | Kontakt / login repozytorium |
+| ------------------ | ---------------------------------------------------------------------------- | ---------------------------- |
+| Arsenii Liapin     | Project manager / architektura / dokumentacja / rdzeń interpretera i edytora | @LiapinArsenii               |
+| Bekzigit Kuatbek   | Elementy pierwotne edytora i interpretera                                    | @kuatbekulybeles-sketch      |
+| Daryna Melnyk      | Runner (wyświetlanie gry) / testy                                            | @melnukdarina1111-blip       |
+| Daryna Kotiash     | Projektant graficzny / UI                                                    | @daritiash                   |
+| Temirlan Kalibekov | Zapis i eksport projektów (storage) / model danych                           | @timakalibekov               |
 
 ---
 
