@@ -15,7 +15,7 @@ Modde (Mobile Oriented Drag&Drop Engine)
 
 | Imię i nazwisko    | Rola główna                                                                  | Kontakt / login repozytorium |
 | ------------------ | ---------------------------------------------------------------------------- | ---------------------------- |
-| Arsenii Liapin     | Project manager / architektura / dokumentacja / rdzeń interpretera i edytora | @LiapinArsenii               |
+| Arsenii Liapin     | Project manager / architektura / dokumentacja / jądro interpretera i edytora | @LiapinArsenii               |
 | Bekzigit Kuatbek   | Elementy pierwotne edytora i interpretera                                    | @kuatbekulybeles-sketch      |
 | Daryna Melnyk      | Runner (wyświetlanie gry) / testy                                            | @melnukdarina1111-blip       |
 | Daryna Kotiash     | Projektant graficzny / UI                                                    | @daritiash                   |
