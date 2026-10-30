@@ -50,7 +50,7 @@ Wersja: 0.3 (po wywiadzie 1)
 ## Terminy: Temirlan
 
 | Termin | Definicja | Synonimy (u klienta) | Homonimy / nie mylić z | Przykład | Powiązane terminy | Źródło |
-|--------|-----------|----------------------|------------------------|----------|-------------------|--------|
+| ------ | --------- | -------------------- | ---------------------- | -------- | ----------------- | ------ |
 |        |           |                      |                        |          |                   |        |
 
 **Stary format: do przeniesienia do tabeli powyżej w osobnej karcie.**
