@@ -31,7 +31,10 @@ Wersja: 0.3 (po wywiadzie 1)
 
 | Termin | Definicja | Synonimy / nie mylić z | Przykład | Powiązane terminy |
 | ------ | --------- | ---------------------- | -------- | ----------------- |
-|        |           |                        |          |                   |
+| Klocek | Pojedyncza instrukcja układana na ekranie metodą „przeciągnij i upuść”, z której twórca buduje zasady działania gry, np. zmianę zmiennej, ruch obiektu lub sprawdzenie warunku. | instrukcja, polecenie; nie mylić z: Obiekt gry | Twórca przeciąga klocek zmiany zmiennej, aby po zebraniu monety dodać graczowi 1 punkt. | Program z klocków, Warunek, Pętla, Zdarzenie |
+| Program z klocków | Układ połączonych klocków i ich parametrów przypisany do zdarzeń, który określa zasady działania gry oraz zachowanie obiektów na ekranie. | układ klocków; nie mylić z: Projekt gry | Twórca układa program z klocków, który przesuwa postać w prawo i sprawdza kolizję z przeszkodą. | Klocek, Zdarzenie, Twórca gier, Projekt gry |
+| Pętla | Klocek, który wielokrotnie powtarza wykonanie umieszczonych w nim innych klocków określoną liczbę razy lub dopóki sprawdzany warunek jest spełniony. | powtarzanie; nie mylić z: Warunek, Klatka | Pętla powtarza 5 razy klocek umieszczający nową monetę na scenie na początku gry. | Klocek, Warunek, Program z klocków |
+| Projekt gry | Zapisana na urządzeniu robocza całość zawierająca nazwę, sceny, obiekty gry, program z klocków oraz ustawienia, którą twórca może wczytać i dalej zmieniać. | robocza gra; nie mylić z: Wyeksportowana gra | Twórca zapisuje projekt gry na telefonie, aby dokończyć układanie klocków następnego dnia. | Twórca gier, Program z klocków, Scena, Obiekt gry, Wyeksportowana gra |        |           |                        |          |                   |
 ## Terminy: Daryna M.
 
 | Termin | Definicja | Synonimy (u klienta) | Homonimy / nie mylić z | Przykład | Powiązane terminy | Źródło |
