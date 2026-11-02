@@ -18,10 +18,10 @@ Wywiad z klientem odbędzie się na zajęciach 3. Klient: nauczyciel informatyki
 
 ## Pytania: Bekzigit (obecny sposób pracy i problemy)
 
-1. 
-2. 
-3. 
-4. 
+1. Jak obecnie wyglądają u Pana/Pani zajęcia wprowadzające uczniów w podstawy algorytmów i programowania?
+2. Z jakich narzędzi korzysta Pan/Pani dotychczas na lekcjach i jakie problemy pojawiają się podczas codziennej pracy z nimi?
+3. Które pojęcia, takie jak zmienna, warunek czy pętla, sprawiają początkującym uczniom największą trudność na starcie?
+4. Co najbardziej przeszkadza uczniom w samodzielnym ćwiczeniu układania programów poza lekcją, np. w domu?
 
 ## Pytania: Daryna M. (użytkownicy i ograniczenia)
 
@@ -32,7 +32,7 @@ Wywiad z klientem odbędzie się na zajęciach 3. Klient: nauczyciel informatyki
 
 ## Pytania: Daryna K. (dane i odbiór gry)
 
-1. 
-2. 
-3.   
-4. 
+1. W jaki sposób uczniowie najchętniej dzielą się stworzonymi przez siebie rzeczami z kolegami z klasy lub rodziną?
+2. Jak obecnie wygląda sprawdzanie i zbieranie prac uczniów przez Pana/Panią po zakończonej lekcji?
+3. Co sprawia uczniom największą trudność, gdy muszą przenieść swoją pracę między różnymi urządzeniami lub dokończyć ją w domu?
+4. Po czym odbiorca, który po raz pierwszy uruchamia grę stworzoną przez kogoś innego, od razu rozumie, jak w nią grać?
