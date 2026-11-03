@@ -40,7 +40,7 @@
 |---|---|---|---|
 |  |  |  |  |
 
-## Ograniczenia: Bekzigit
+## Ograniczenia: Daryna K.
 
 - 
 ## Historyjki użytkownika: Daryna K.
@@ -49,7 +49,7 @@
 ## Historyjki użytkownika: Temirlan
 
 - (do uzupełnienia)
-## Pytania otwarte: Bekzigit
+## Pytania otwarte: Temirlan
 
 | Nr | Pytanie | Do kogo | Issue | Status |
 |---|---|---|---|---|
