@@ -26,7 +26,26 @@
 
 | ID | Treść | Źródło | Priorytet | Uwagi |
 |---|---|---|---|---|
-|  |  |  |  |  |
+| FR-01 | System umożliwia Twórcy gier dodanie klocka do programu z klocków metodą „przeciągnij i upuść” na ekranie dotykowym telefonu. | N-02, N-07 |  |  |
+| FR-02 | System umożliwia Twórcy gier przypisanie programu z klocków do jednego ze zdarzeń: początek gry, każda klatka, dotknięcie ekranu, kolizja, upływ czasu. | N-03 |  |  |
+| FR-03 | System umożliwia Twórcy gier zmianę wartości zmiennej za pomocą klocka, np. zwiększenie wyniku o 1. | N-05 |  |  |
+| FR-04 | System umożliwia Twórcy gier użycie warunku, który wykonuje wskazane klocki tylko wtedy, gdy sprawdzane pytanie ma odpowiedź twierdzącą. | N-05 |  |  |
+| FR-05 | System umożliwia Twórcy gier użycie pętli, która powtarza wskazane klocki określoną liczbę razy lub dopóki warunek jest spełniony. | N-05 |  |  |
+| FR-06 | System umożliwia Twórcy gier zmianę położenia x i y obiektu gry za pomocą klocka. | N-03 |  |  |
+| FR-07 | System umożliwia Twórcy gier sprawdzenie za pomocą klocka, czy obiekt gry ma kolizję z obiektem gry wskazanego typu. | karta projektu |  |  |
+| FR-08 | System umożliwia Twórcy gier umieszczenie obiektu gry w scenie. | N-03 |  |  |
+| FR-09 | System umożliwia Twórcy gier wybór grafiki obiektu lub tła z biblioteki grafik. | karta projektu |  |  |
+| FR-10 | System umożliwia Twórcy gier uruchomienie gry bezpośrednio w edytorze. | N-01, N-05 |  |  |
+| FR-11 | System zatrzymuje uruchomioną grę po naciśnięciu przycisku „Stop”, zachowując program z klocków bez zmian. | N-04 |  |  |
+| FR-12 | System przerywa wykonywanie programu z klocków, w którym pętla nie kończy się w ciągu jednej klatki, bez utraty projektu gry. | N-04 |  |  |
+| FR-13 | System wyświetla Twórcy gier komunikat o błędzie w programie z klocków ze wskazaniem klocka, którego błąd dotyczy. | N-08 |  |  |
+| FR-14 | System wyświetla w trakcie gry aktualną wartość zmiennej wybranej przez Twórcę gier, np. wyniku. | N-05, N-12 |  |  |
+| FR-15 | System umożliwia Twórcy gier zapis projektu gry na urządzeniu. | karta projektu |  |  |
+| FR-16 | System umożliwia Twórcy gier wczytanie zapisanego projektu gry z urządzenia. | karta projektu |  |  |
+| FR-17 | System umożliwia Twórcy gier eksport projektu gry do pliku jako wyeksportowanej gry. | N-11 |  |  |
+| FR-18 | System umożliwia Odbiorcy gry uruchomienie wyeksportowanej gry na innym telefonie niż ten, na którym ją utworzono. | N-11 |  |  |
+| FR-19 | System umożliwia Odbiorcy gry sterowanie obiektem gry przez dotknięcie ekranu. | N-12 |  |  |
+| FR-20 | System umożliwia Twórcy gier otwarcie jednego z dwóch przykładowych projektów gry: gry z widokiem z góry lub prostej platformówki. | karta projektu |  |  |
 
 ## Wymagania niefunkcjonalne (NFR): Daryna K.
 
