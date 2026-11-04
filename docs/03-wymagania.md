@@ -108,14 +108,74 @@ Wymagania: FR-10, BR-05 · Priorytet: Must
 #### US-06: Zatrzymanie uruchomionej gry przyciskiem „Stop”
 Wymagania: FR-11, NFR-03 · Priorytet: Must
 
+**Jako** Twórca gier **chcę** zatrzymać uruchomioną grę, **aby** nie stracić dotychczasowej pracy, gdy program z klocków się zawiesi.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Zatrzymanie działającej gry**
+  - **Given** uruchomiłem grę w edytorze, a program z klocków zawiera 12 klocków,
+  - **When** naciskam przycisk „Stop”,
+  - **Then** uruchomiona gra zostaje zatrzymana.
+- **Scenariusz 2: Pętla, która się nie kończy**
+  - **Given** uruchomiłem grę, w której program z klocków zawiera pętlę, która się nie kończy,
+  - **When** naciskam przycisk „Stop”,
+  - **Then** gra zostaje zatrzymana nie później niż 1 sekundę po naciśnięciu przycisku (NFR-03).
+- **Scenariusz 3: Program z klocków po zatrzymaniu**
+  - **Given** program z klocków zawierał 12 klocków przed uruchomieniem gry, a gra została zatrzymana przyciskiem „Stop”,
+  - **When** wracam do programu z klocków,
+  - **Then** program z klocków nadal zawiera 12 klocków, czyli 0 utraconych klocków (NFR-03).
+
 #### US-07: Zapis projektu gry na urządzeniu
 Wymagania: FR-15, BR-03 · Priorytet: Must
+
+**Jako** Twórca gier **chcę** zapisać projekt gry na swoim urządzeniu, **aby** móc go później wczytać i dalej zmieniać.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Zapis projektu gry**
+  - **Given** ułożyłem program z klocków w projekcie gry „Las”,
+  - **When** zapisuję projekt gry,
+  - **Then** projekt gry „Las” jest zapisany na moim urządzeniu.
+- **Scenariusz 2: Zapis bez konta użytkownika**
+  - **Given** nie mam konta użytkownika i nie jestem zalogowany,
+  - **When** zapisuję projekt gry „Las”,
+  - **Then** projekt gry zostaje zapisany lokalnie na urządzeniu, bez prośby o założenie konta lub zalogowanie (BR-03).
 
 #### US-08: Eksport gry do pliku
 Wymagania: FR-17, BR-04 · Priorytet: Must
 
+**Jako** Twórca gier **chcę** wyeksportować projekt gry do pliku, **aby** wysłać grę koledze tak, żeby otworzyła się na jego telefonie.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Eksport projektu gry**
+  - **Given** mam zapisany projekt gry „Las”,
+  - **When** eksportuję projekt gry,
+  - **Then** na moim urządzeniu powstaje plik wyeksportowanej gry „Las”.
+- **Scenariusz 2: Przekazanie gry jako pliku**
+  - **Given** mam plik wyeksportowanej gry „Las”,
+  - **When** przesyłam ten plik Odbiorcy gry przez komunikator,
+  - **Then** Odbiorca gry otrzymuje grę jako plik, bez publikacji gry w sklepie z aplikacjami (BR-04).
+
 #### US-09: Uruchomienie otrzymanej gry przez Odbiorcę gry
 Wymagania: FR-18, BR-01, BR-04, NFR-08 · Priorytet: Must
+
+**Jako** Odbiorca gry **chcę** uruchomić grę otrzymaną od Twórcy gier na swoim telefonie, **aby** zagrać w nią, mimo że przesłane pliki nie zawsze otwierają się na innym urządzeniu.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Uruchomienie otrzymanej gry**
+  - **Given** otrzymałem przez komunikator plik wyeksportowanej gry „Las” utworzonej na innym telefonie,
+  - **When** otwieram ten plik na swoim telefonie,
+  - **Then** gra „Las” uruchamia się.
+- **Scenariusz 2: Próba zmiany otrzymanej gry**
+  - **Given** uruchomiłem otrzymaną wyeksportowaną grę „Las”,
+  - **When** próbuję zmienić program z klocków tej gry,
+  - **Then** system nie pozwala na zmianę i gra pozostaje taka, jaką przygotował Twórca gier (BR-01).
+- **Scenariusz 3: Gra bez sklepu z aplikacjami**
+  - **Given** otrzymałem wyeksportowaną grę „Las” jako plik, a gra nie jest opublikowana w sklepie z aplikacjami,
+  - **When** otwieram ten plik,
+  - **Then** gra uruchamia się bez pobierania jej ze sklepu z aplikacjami (BR-04).
+- **Scenariusz 4: Uruchomienie na innym telefonie z Androidem**
+  - **Given** plik wyeksportowanej gry „Las” przesłano przez komunikator 10 razy na inny telefon z Androidem,
+  - **When** Odbiorca gry otwiera plik po każdym przesłaniu,
+  - **Then** gra uruchamia się w 10 z 10 prób (NFR-08).
 
 ## Pytania otwarte: Temirlan
 
