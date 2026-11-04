@@ -91,17 +91,97 @@
 #### US-01: Układanie programu z klocków i przypisanie go do zdarzenia
 Wymagania: FR-01, FR-02, BR-02, BR-05 · Priorytet: Must
 
+**Jako** Twórca gier **chcę** ułożyć program z klocków i przypisać go do zdarzenia, **aby** stworzyć prosty interaktywny projekt, w którym obiekt gry reaguje na zdarzenie.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Przypisanie programu z klocków do zdarzenia**
+  - **Given** Twórca gier dodał do programu z klocków obiektu gry klocek metodą „przeciągnij i upuść”.
+  - **When** Twórca gier przypisuje ten program z klocków do zdarzenia „dotknięcie ekranu”.
+  - **Then** program z klocków jest przypisany do zdarzenia „dotknięcie ekranu”.
+- **Scenariusz 2: Program z klocków nie wykonuje się bez zdarzenia**
+  - **Given** obiekt gry ma program z klocków przypisany do zdarzenia „dotknięcie ekranu”.
+  - **When** Twórca gier uruchamia grę bez dotykania ekranu.
+  - **Then** obiekt gry nie wykonuje przypisanego programu z klocków (BR-05).
+- **Scenariusz 3: Własny klocek nie może zostać dodany do programu**
+  - **Given** Twórca gier ma otwarty program z klocków obiektu gry.
+  - **When** Twórca gier próbuje dodać do programu własny klocek spoza stałego zestawu.
+  - **Then** program z klocków nie zawiera własnego klocka (BR-02).
+
 #### US-02: Zmiana zmiennej i reakcja za pomocą warunku
 Wymagania: FR-03, FR-04, BR-02 · Priorytet: Must
+
+**Jako** Twórca gier **chcę** zmienić wartość zmiennej i uzależnić reakcję obiektu gry od warunku, **aby** zrozumieć, że zmienna zmienia się w trakcie gry, a warunek sprawdza, a nie powtarza.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Zmiana wartości zmiennej za pomocą klocka**
+  - **Given** obiekt gry ma program z klocków, który po zdarzeniu „dotknięcie ekranu” zwiększa zmienną „wynik” o 1, a zmienna „wynik” wynosi 0.
+  - **When** Twórca gier dotyka ekranu w uruchomionej grze.
+  - **Then** zmienna „wynik” wynosi 1.
+- **Scenariusz 2: Warunek nie jest spełniony**
+  - **Given** obiekt gry ma program z klocków z warunkiem „czy wynik jest większy niż 10?”, który wykonuje wskazany klocek tylko przy odpowiedzi twierdzącej, a zmienna „wynik” wynosi 5.
+  - **When** Twórca gier uruchamia ten program z klocków.
+  - **Then** wskazany w warunku klocek nie zostaje wykonany.
+- **Scenariusz 3: Własny klocek zmieniający zmienną nie może zostać dodany**
+  - **Given** Twórca gier ma otwarty program z klocków obiektu gry.
+  - **When** Twórca gier próbuje dodać do programu własny klocek zmieniający zmienną, spoza stałego zestawu.
+  - **Then** program z klocków nie zawiera własnego klocka (BR-02).
 
 #### US-03: Powtarzanie klocków za pomocą pętli
 Wymagania: FR-05, BR-02 · Priorytet: Must
 
+**Jako** Twórca gier **chcę** użyć pętli, która powtarza wskazane klocki, **aby** zrozumieć różnicę między pętlą, która powtarza, a warunkiem, który tylko sprawdza.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Powtarzanie klocków określoną liczbę razy**
+  - **Given** obiekt gry ma program z klocków z pętlą, która 3 razy powtarza klocek zwiększający zmienną „wynik” o 1, a zmienna „wynik” wynosi 0.
+  - **When** Twórca gier uruchamia ten program z klocków.
+  - **Then** zmienna „wynik” wynosi 3.
+- **Scenariusz 2: Warunek pętli kończy powtarzanie**
+  - **Given** obiekt gry ma program z klocków z pętlą, która powtarza klocek zwiększający zmienną „wynik” o 1, dopóki „wynik” jest mniejszy niż 5, a zmienna „wynik” wynosi 0.
+  - **When** Twórca gier uruchamia ten program z klocków.
+  - **Then** zmienna „wynik” wynosi 5.
+- **Scenariusz 3: Własny rodzaj pętli nie może zostać dodany**
+  - **Given** Twórca gier ma otwarty program z klocków obiektu gry.
+  - **When** Twórca gier próbuje dodać do programu własny rodzaj pętli, spoza stałego zestawu klocków.
+  - **Then** program z klocków nie zawiera własnego rodzaju pętli (BR-02).
+
 #### US-04: Umieszczenie obiektu gry w scenie i zmiana jego położenia
 Wymagania: FR-06, FR-08, BR-02 · Priorytet: Must
 
+**Jako** Twórca gier **chcę** umieścić obiekt gry w scenie i zmienić jego położenie, **aby** stworzyć prosty interaktywny projekt z podstawowym ruchem.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Umieszczenie obiektu gry w scenie**
+  - **Given** Twórca gier ma otwarty projekt gry z pustą sceną.
+  - **When** Twórca gier umieszcza obiekt gry w scenie.
+  - **Then** obiekt gry znajduje się w scenie.
+- **Scenariusz 2: Zmiana położenia obiektu gry za pomocą klocka**
+  - **Given** obiekt gry w scenie ma położenie x = 10 i y = 20 oraz program z klocków, który ustawia jego położenie na x = 30 i y = 40.
+  - **When** Twórca gier uruchamia ten program z klocków.
+  - **Then** położenie obiektu gry wynosi x = 30 i y = 40.
+- **Scenariusz 3: Własny klocek zmieniający położenie nie może zostać dodany**
+  - **Given** Twórca gier ma otwarty program z klocków obiektu gry.
+  - **When** Twórca gier próbuje dodać do programu własny klocek zmieniający położenie, spoza stałego zestawu.
+  - **Then** program z klocków nie zawiera własnego klocka (BR-02).
+
 #### US-05: Uruchomienie gry w edytorze
 Wymagania: FR-10, BR-05 · Priorytet: Must
+
+**Jako** Twórca gier **chcę** uruchomić grę bezpośrednio w edytorze, **aby** od razu zobaczyć, jak kroki programu działają w prawdziwej grze.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Uruchomienie gry w edytorze**
+  - **Given** Twórca gier ma otwarty projekt gry z obiektem gry w scenie.
+  - **When** Twórca gier uruchamia grę w edytorze.
+  - **Then** w edytorze wyświetla się uruchomiona gra z obiektem gry w scenie.
+- **Scenariusz 2: Program z klocków bez przypisanego zdarzenia**
+  - **Given** obiekt gry ma program z klocków, który nie jest przypisany do żadnego zdarzenia.
+  - **When** Twórca gier uruchamia grę w edytorze.
+  - **Then** obiekt gry nie wykonuje programu z klocków (BR-05).
+- **Scenariusz 3: Program z klocków po wystąpieniu zdarzenia**
+  - **Given** obiekt gry ma program z klocków przypisany do zdarzenia „dotknięcie ekranu”, a gra jest uruchomiona w edytorze.
+  - **When** Twórca gier dotyka ekranu.
+  - **Then** obiekt gry wykonuje przypisany program z klocków (BR-05).
 
 ## Historyjki użytkownika: Daryna M.
 
