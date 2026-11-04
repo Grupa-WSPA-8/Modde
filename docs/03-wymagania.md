@@ -66,7 +66,13 @@
 
 | ID | Reguła | Źródło | Uwagi (których FR dotyczy) |
 |---|---|---|---|
-|  |  |  |  |
+| BR-01 | Odbiorca gry może tylko uruchomić wyeksportowaną grę, nie może jej zmieniać. | słownik: Odbiorca gry | |
+| BR-02 | Odbiorca gry otrzymuje wyeksportowaną grę od Twórcy gier. | słownik: Odbiorca gry | |
+| BR-03 | Twórca gier może wczytać zapisany projekt gry i dalej go zmieniać. | słownik: Projekt gry | |
+| BR-04 | Wyeksportowaną grę można udostępnić innej osobie i uruchomić na innym urządzeniu niż to, na którym ją utworzono. | słownik: Wyeksportowana gra | |
+| BR-05 | Obiekt gry ma grafikę, położenie na ekranie i własne zmienne. | słownik: Obiekt gry | |
+| BR-06 | Obiekt gry wykonuje przypisany mu program z klocków dopiero wtedy, gdy wystąpi zdarzenie, do którego ten program przypisano. | słownik: Zdarzenie | |
+| BR-07 | Dane osobowe użytkowników nie są zbierane ani przetwarzane. | karta projektu | |
 
 ## Ograniczenia: Daryna K.
 
