@@ -271,3 +271,6 @@ Kryteria akceptacji:
 | Q-08 | Kto albo co podpowiada dziś uczniowi w domu, co poszło nie tak w jego pracy? (N-08)                                                          | klient  | do uzupełnienia | do sprawdzenia |
 | Q-09 | Co powinien zobaczyć kolega, który po raz pierwszy uruchamia czyjąś grę, żeby od razu wiedzieć, co ma robić? (N-12)                          | klient  | do uzupełnienia | do sprawdzenia |
 | Q-10 | Co dokładnie rozumie Pan/Pani przez animację w pierwszym projekcie ucznia? (N-03)                                                            | klient  | do uzupełnienia | do sprawdzenia |
+| Q-11 | Co powinno się stać, gdy uczeń zapisuje swoją pracę pod nazwą, której już użył? (US-07)                                                      | klient  | do uzupełnienia | do sprawdzenia |
+| Q-12 | Co powinno się stać, gdy uczeń próbuje przekazać dalej grę, w której program zawiera błąd? (US-08)                                           | klient  | do uzupełnienia | do sprawdzenia |
+| Q-13 | Co musi mieć na telefonie kolega, aby otworzyć grę wysłaną przez ucznia? (US-09)                                                             | klient  | do uzupełnienia | do sprawdzenia |
