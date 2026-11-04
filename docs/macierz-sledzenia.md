@@ -42,4 +42,3 @@
 | słownik: Zdarzenie                                  | BR-05 Program wykonuje się po zdarzeniu                         | US-01, US-05               | Must      |
 | karta projektu, „Główne założenia”                  | BR-06 Brak danych osobowych                                     | — (Must, bez historyjki)   | Must      |
 
-Jeden wiersz to jedno wymaganie. Priorytet reguły biznesowej wynika z najwyższego priorytetu powiązanych z nią wymagań. Pusta komórka oznacza pytanie. Historyjki powstają tylko dla wymagań Must, więc pozostałe wiersze nie mają jej celowo.
