@@ -45,3 +45,89 @@ Wersja dokumentacji: 0.3
 ## Zasady pracy zespołu
 
 Zob. [TEAM.md](TEAM.md) (po rosyjsku, dla zespołu).
+#### 1. Język
+
+- Komunikacja na czacie, commity i opisy PR – po rosyjsku.
+- Komentarze w kodzie – po rosyjsku.
+- README.md i cały folder `docs/` (włączając mapę projektu) – po polsku: czyta je prowadzący.
+- Nazwy plików i folderów – alfabetem łacińskim, bez spacji i polskich liter (ą ć ę ł ń ó ś ź ż).
+
+#### 2. Kto za co odpowiada
+
+Rola to odpowiedzialność za jakość swojego obszaru, a nie monopol na niego. Jeśli karta jest przeterminowana, lider zespołu przydzieli ją innemu uczestnikowi (sekcja 3).
+
+| Folder / plik | Odpowiedzialny |
+| --------------------- | ------------------ |
+| `docs/` | Arsenii Liapin |
+| `README.md` | Arsenii Liapin |
+| `contract/` | Arsenii Liapin |
+| `interpreter/` (jądro) | Arsenii Liapin |
+| `interpreter/blocks/` | Bekzigit Kuatbek |
+| `editor/` (jądro) | Arsenii Liapin |
+| `editor/blocks/` | Bekzigit Kuatbek |
+| `runner/` | Daryna Melnyk |
+| `storage/` | Temirlan Kalibekov |
+| `design/` | Daryna Kotiash |
+
+- Co dokładnie i gdzie robi każdy, określają karty na tablicy. Poprawiamy tylko to, co jest wskazane w Twojej karcie.
+- We wspólnych plikach (słownik, pytania do klienta) piszemy tylko w swojej sekcji.
+- Do cudzego folderu wchodzimy tylko po uzgodnieniu z właścicielem. Strukturę `docs/` i cudze pliki zmieniamy tylko za porozumieniem.
+- `blocks/` – niezależne prymitywy (jeden prymityw – jeden lub kilka plików). Prymitywy nie wymagają poprawek w jądrze: podłącza je do jądra Arsenii. Ta relacja nie jest opisana w `contract/`.
+- Zmiany w `contract/` dotyczą wszystkich: najpierw omawiamy na czacie.
+
+#### 3. Terminy
+
+Zasada jest taka sama dla wszystkich, w tym lidera zespołu. Jej celem jest zapobieganie utknięciu pracy.
+
+- Każda karta ma jednego właściciela i termin (pole „Termin”). Zadania są małe, na jedną krótką sesję. Termin ustala lider zespołu, zazwyczaj 1–3 dni.
+- Zadanie jest oddane w terminie, jeśli do końca dnia terminu (23:59, czas warszawski) otwarty jest PR, a karta znajduje się w „Do przeglądu”.
+- Zadanie jest wykonane, gdy PR zostanie złączony (merged). Jeśli po review potrzebne są poprawki, daje się na nie około jednego dnia.
+- PR, który nie odpowiada rezultatowi z karty (pusty, formalny, nie przechodzi testów), jest zwracany do poprawy bez przedłużania terminu.
+- Jeśli nie zdążasz, napisz na czacie ogólnym lub prywatnie do lidera zespołu przed terminem. Jeśli masz niedokończoną pracę, którą można pokazać, można napisać także po terminie.
+- Jeśli masz osobisty powód, dla którego przez jakiś czas nie możesz brać zadań, napisz prywatnie do lidera zespołu i poinformuj, na jak długo. Wchodzenie w szczegóły problemu nie jest obowiązkowe. W tym okresie lider nie przydziela Ci zadań, a potem rozdziela obciążenie tak, aby wszystko skompensować.
+- Termin minął, PR nie jest otwarty, a nic nie napisałeś/aś: karta zostaje zwolniona. Lider zespołu przydziela ją ponowne między tych, którzy wyrobili się w terminie, pytając wcześniej o zgodę osobę, której ją przekazuje. Zamiast tego może napisać na ogólnym czacie i zapingować tych, którzy się wyrobili: kto pierwszy odpowie, ten bierze. Jeśli nikt nie może, lider robi zadanie sam lub zdejmuje je z tablicy.
+- Jeśli PR jest otwarty po terminie, ale przed ponownym przydzieleniem, jest rozpatrywany jak zwykle.
+- Ponowne przydzielenie to zmiana właściciela w tej samej karcie. Wkład w gita pozostaje u tego, kto wykonał pracę.
+
+#### 4. Gałęzie*
+
+- `main` – zawsze robocza. Bezpośredni push do niej jest zabroniony przez ustawienia repozytorium.
+- Jedna karta na tablicy = jedna krótka gałąź. Nazwa: `<zadanie>-<imię>`, na przykład `slownik-daryna-m`.
+- Jak utworzyć gałąź w GitHub Desktop:
+  1. Na górze wybieramy gałąź `main` i klikamy „Fetch origin” / „Pull origin”, aby pobrać najnowszą wersję.
+  2. „Current Branch” → „New Branch”, wpisujemy nazwę według powyższego schematu, jako bazę wybieramy `main`.
+  3. Klikamy „Publish branch”.
+- Skończono zadanie – otwieramy PR (sekcja 6)
+- Pracować na cudzej gałęzi nie wolno.
+
+*\* Lider zespołu nie tworzy gałęzi ani PR, pracuje i puszuje bezpośrednio na `main` bez cudzej weryfikacji*
+
+#### 5. Commity
+
+- Małe i częste, jeden commit – jedna zmiana.
+- Wiadomość (pole „Summary” w GitHub Desktop) krótko mówi, co zrobiono: „Dodałem paletę bloków”, a nie „poprawki”.
+- Każdy uczestnik committuje ze swojego konta.
+
+#### 6. Pull request
+
+- Skończono zadanie z tablicy – w GitHub Desktop klikamy „Create Pull Request” (menu „Branch”). W opisie 1–2 linijki: co zrobiono oraz `Closes #numer` karty.
+- Zatwierdza, merguje i usuwa gałąź lider zespołu.
+
+#### 7. Tablica zadań
+
+- Każde zadanie to karta z jednym właścicielem, konkretnym rezultatem i terminem.
+- Rozpoczęto zadanie – karta trafia do „W trakcie”, otwarto PR – do „Do przeglądu”.
+- Ponowne przydzielenie zadania to zmiana właściciela w tej samej karcie (sekcja 3).
+
+#### 8. Czego nie wolno
+
+- \* Puszować bezpośrednio do `main` (zabronione przez ustawienia). 
+- \* Pracować w `main` lub na cudzej gałęzi. 
+- Dotykać cudzego pliku bez uzgodnienia.
+- Commitować haseł, kluczy i dużych plików.
+
+*\* Lider zespołu stanowi wyjątek*
+
+#### 9. Jeśli coś się zepsuło
+
+Nie panikujemy, piszemy do lidera zespołu. Git przechowuje całą historię, każdą zmianę można cofnąć: wycofanie robi się przez PR.
