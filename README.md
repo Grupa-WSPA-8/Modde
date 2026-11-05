@@ -49,7 +49,7 @@ Zob. [TEAM.md](TEAM.md) (po rosyjsku, dla zespołu).
 
 - Komunikacja na czacie, commity i opisy PR – po rosyjsku.
 - Komentarze w kodzie – po rosyjsku.
-- README.md i cały folder `docs/` (włączając mapę projektu) – po polsku: czyta je prowadzący.
+- README.md i cały folder `docs/` (włączając kartę projektu) – po polsku: czyta je prowadzący.
 - Nazwy plików i folderów – alfabetem łacińskim, bez spacji i polskich liter (ą ć ę ł ń ó ś ź ż).
 
 #### 2. Kto za co odpowiada
@@ -89,9 +89,9 @@ Zasada jest taka sama dla wszystkich, w tym lidera zespołu. Jej celem jest zapo
 - Jeśli PR jest otwarty po terminie, ale przed ponownym przydzieleniem, jest rozpatrywany jak zwykle.
 - Ponowne przydzielenie to zmiana właściciela w tej samej karcie. Wkład w gita pozostaje u tego, kto wykonał pracę.
 
-#### 4. Gałęzie*
+#### 4. Gałęzie
 
-- `main` – zawsze robocza. Bezpośredni push do niej jest zabroniony przez ustawienia repozytorium.
+- `main` – zawsze robocza. Bezpośredni push do niej jest zabroniony przez ustawienia repozytorium dla wszystkich, łącznie z liderem zespołu.
 - Jedna karta na tablicy = jedna krótka gałąź. Nazwa: `<zadanie>-<imię>`, na przykład `slownik-daryna-m`.
 - Jak utworzyć gałąź w GitHub Desktop:
   1. Na górze wybieramy gałąź `main` i klikamy „Fetch origin” / „Pull origin”, aby pobrać najnowszą wersję.
@@ -99,8 +99,6 @@ Zasada jest taka sama dla wszystkich, w tym lidera zespołu. Jej celem jest zapo
   3. Klikamy „Publish branch”.
 - Skończono zadanie – otwieramy PR (sekcja 6)
 - Pracować na cudzej gałęzi nie wolno.
-
-*\* Lider zespołu nie tworzy gałęzi ani PR, pracuje i puszuje bezpośrednio na `main` bez cudzej weryfikacji*
 
 #### 5. Commity
 
@@ -111,23 +109,38 @@ Zasada jest taka sama dla wszystkich, w tym lidera zespołu. Jej celem jest zapo
 #### 6. Pull request
 
 - Skończono zadanie z tablicy – w GitHub Desktop klikamy „Create Pull Request” (menu „Branch”). W opisie 1–2 linijki: co zrobiono oraz `Closes #numer` karty.
-- Zatwierdza, merguje i usuwa gałąź lider zespołu.
+- Nagłówków `##` i sekcji „Dla recenzenta” w opisie PR nie ruszamy. W „Closes \#n” zamiast n wpisujemy numer karty, a pole „Co zrobiono” wypełniamy własnymi słowami (można przez AI).
+- Recenzję przeprowadza wyznaczony recenzent według zasad z sekcji 8.
+- Po zatwierdzeniu PR merguje autor, a gałąź usuwa się automatycznie.
 
 #### 7. Tablica zadań
 
-- Każde zadanie to karta z jednym właścicielem, konkretnym rezultatem i terminem.
-- Rozpoczęto zadanie – karta trafia do „W trakcie”, otwarto PR – do „Do przeglądu”.
+- Każde zadanie to karta z jednym właścicielem, konkretnym rezultatem, recenzentem i terminem.
+- Każda karta ma recenzenta (punkt 5 karty), jest on wskazany w nazwie: „| Recenzent: <imię>”.
 - Ponowne przydzielenie zadania to zmiana właściciela w tej samej karcie (sekcja 3).
 
-#### 8. Czego nie wolno
+#### 8. Recenzje
 
-- \* Puszować bezpośrednio do `main` (zabronione przez ustawienia). 
-- \* Pracować w `main` lub na cudzej gałęzi. 
+- Recenzenta wyznacza lider zespołu po kolei, jego imię jest wskazane w nazwie karty po „|”: „Recenzent: <imię>”. Recenzent nie może być autorem PR.
+- Po wysłaniu PR wykonawca pisze do recenzenta, że PR został wysłany, i podaje numer KARTY, a nie PR. Recenzent sprawdza na tablicy, że karta jest na miejscu i że recenzentem jest właśnie on. Jeśli nie, pisze do wykonawcy.
+- Pole „Treść zadania” w opisie PR musi się zgadzać z punktami 1–4 karty. Jeśli się nie zgadza, recenzent zostawia Request changes z tekstem „Treść zadania nie zgadza się z kartą” i pisze do wykonawcy.
+- W każdej recenzji ma być opis wypełniony przez Claude według instrukcji oraz jedno zdanie od recenzenta własnymi słowami o tym, co konkretnie obejrzał i sprawdził.
+- Claude tylko podpowiada. Werdykt (Approve lub Request changes) wydaje recenzent, a nie AI. Jeśli recenzentowi trudno zdecydować, pisze do lidera zespołu.
+- Po każdej recenzji recenzent pisze do wykonawcy. Po każdym wykonanym wniosku o zmiany wykonawca pisze do recenzenta.
+- Poprawki wprowadza się w tej samej gałęzi i w tym samym PR.
+- Jeśli PR nie zostanie przyjęty w trzech próbach albo poprawki wiszą bez recenzji dłużej niż dobę (licząc od wiadomości do recenzenta), wykonawca pisze do lidera zespołu.
+- Gdy PR jest na sprawdzeniu, wykonawca może brać inne karty. Dla każdej nowej karty przechodzi od nowa całą listę kontrolną: nowa gałąź od świeżego `main`.
+- PR merguje się dopiero po Approve od osoby, która nie jest autorem. Autor nie merguje PR bez zatwierdzenia, dotyczy to także lidera zespołu.
+
+#### 9. Czego nie wolno
+
+- Puszować bezpośrednio do `main` (zabronione przez ustawienia). 
+- Pracować w `main` lub na cudzej gałęzi. 
 - Dotykać cudzego pliku bez uzgodnienia.
 - Commitować haseł, kluczy i dużych plików.
+- Mergować PR bez zatwierdzenia recenzenta (zabronione przez ustawienia).
+- Recenzować własny PR (zabronione przez ustawienia).
 
-*\* Lider zespołu stanowi wyjątek*
-
-#### 9. Jeśli coś się zepsuło
+#### 10. Jeśli coś się zepsuło
 
 Nie panikujemy, piszemy do lidera zespołu. Git przechowuje całą historię, każdą zmianę można cofnąć: wycofanie robi się przez PR.
