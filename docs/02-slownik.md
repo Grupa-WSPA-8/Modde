@@ -15,7 +15,7 @@ Wersja: 0.3 (po wywiadzie 1)
 | Twórca gier | Osoba, która w Modde układa program z klocków, testuje go i eksportuje własną grę. | — | Odbiorca gry | Uczeń układa klocki tak, aby postać poruszała się po dotknięciu ekranu. | Odbiorca gry, Projekt gry, Program z klocków | karta projektu |
 | Odbiorca gry | Osoba, która otrzymuje gotową grę od twórcy i uruchamia ją na swoim telefonie, bez możliwości jej zmieniania. | gracz | Twórca gier | Kolega ucznia otwiera wysłany plik i gra. | Twórca gier, Wyeksportowana gra | wywiad-1, pytanie 16 |
 
-## Terminy: Bekzigit
+## Terminy: Bekzhigit
 
 | Termin | Definicja | Synonimy (u klienta) | Homonimy / nie mylić z | Przykład | Powiązane terminy | Źródło |
 |---|---|---|---|---|---|---|

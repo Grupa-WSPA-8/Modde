@@ -8,7 +8,7 @@ Projekt powstaje w ramach zajęć „Projekt zespołowy systemu informatycznego"
 | Osoba              | Główna odpowiedzialność                                                        | Login                   |
 | ------------------ | ------------------------------------------------------------------------------ | ----------------------- |
 | Arsenii Liapin     | koordynacja projektu, architektura, dokumentacja, jądro interpretera i edytora | @LiapinArsenii          |
-| Bekzigit Kuatbek   | Elementy pierwotne edytora i interpretera                                      | @kuatbekulybeles-sketch |
+| Bekzhigit Kuatbek   | Elementy pierwotne edytora i interpretera                                      | @kuatbekulybeles-sketch |
 | Daryna Melnyk      | runner (wyświetlanie gry), testy                                               | @melnukdarina1111-blip  |
 | Daryna Kotiash     | projekt graficzny i UI                                                         | @daritiash              |
 | Temirlan Kalibekov | zapis i eksport projektów, model danych                                        | @timakalibekov          |
@@ -62,9 +62,9 @@ Rola to odpowiedzialność za jakość swojego obszaru, a nie monopol na niego. 
 | `README.md` | Arsenii Liapin |
 | `contract/` | Arsenii Liapin |
 | `interpreter/` (jądro) | Arsenii Liapin |
-| `interpreter/blocks/` | Bekzigit Kuatbek |
+| `interpreter/blocks/` | Bekzhigit Kuatbek |
 | `editor/` (jądro) | Arsenii Liapin |
-| `editor/blocks/` | Bekzigit Kuatbek |
+| `editor/blocks/` | Bekzhigit Kuatbek |
 | `runner/` | Daryna Melnyk |
 | `storage/` | Temirlan Kalibekov |
 | `design/` | Daryna Kotiash |

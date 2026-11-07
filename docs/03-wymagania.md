@@ -1,7 +1,7 @@
 	# Wymagania — Modde
 
 **Wersja:** 0.2
-**Autorzy:** Arsenii Liapin, Bekzigit Kuatbek, Daryna Melnyk, Daryna Kotiash, Temirlan Kalibekov
+**Autorzy:** Arsenii Liapin, Bekzhigit Kuatbek, Daryna Melnyk, Daryna Kotiash, Temirlan Kalibekov
 
 ## Zasady wypełniania
 

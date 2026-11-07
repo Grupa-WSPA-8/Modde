@@ -16,7 +16,7 @@ Wywiad z klientem odbędzie się na zajęciach 3. Klient: nauczyciel informatyki
 3. Jakie zasady powinny obowiązywać uczniów w różnym wieku, a w czym powinni mieć pełną swobodę?
 4. Co powinno się stać, gdy uczeń ułoży program, który zawiesza grę, np. powtarza się bez końca?
 
-## Pytania: Bekzigit (obecny sposób pracy i problemy)
+## Pytania: Bekzhigit (obecny sposób pracy i problemy)
 
 1. Jak obecnie wyglądają u Pana/Pani zajęcia wprowadzające uczniów w podstawy algorytmów i programowania?
 2. Z jakich narzędzi korzysta Pan/Pani dotychczas na lekcjach i jakie problemy pojawiają się podczas codziennej pracy z nimi?
