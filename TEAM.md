@@ -17,9 +17,9 @@
 | `README.md`           | Arsenii Liapin     |
 | `contract/`           | Arsenii Liapin     |
 | `interpreter/` (ядро) | Arsenii Liapin     |
-| `interpreter/blocks/` | Bekzigit Kuatbek   |
+| `interpreter/blocks/` | Bekzhigit Kuatbek   |
 | `editor/` (ядро)      | Arsenii Liapin     |
-| `editor/blocks/`      | Bekzigit Kuatbek   |
+| `editor/blocks/`      | Bekzhigit Kuatbek   |
 | `runner/`             | Daryna Melnyk      |
 | `storage/`            | Temirlan Kalibekov |
 | `design/`             | Daryna Kotiash     |

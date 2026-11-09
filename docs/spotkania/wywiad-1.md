@@ -5,7 +5,7 @@
 **Uczestnicy:**
 
 - Arsenii Liapin (@LiapinArsenii) – rola w wywiadzie: do uzupełnienia
-- Bekzigit Kuatbek (@kuatbekulybeles-sketch) – rola w wywiadzie: do uzupełnienia
+- Bekzhigit Kuatbek (@kuatbekulybeles-sketch) – rola w wywiadzie: do uzupełnienia
 - Daryna Melnyk (@melnukdarina1111-blip) – rola w wywiadzie: do uzupełnienia
 - Daryna Kotiash (@daritiash) – rola w wywiadzie: do uzupełnienia
 - Temirlan Kalibekov (@timakalibekov) – rola w wywiadzie: do uzupełnienia
