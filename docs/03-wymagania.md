@@ -259,18 +259,18 @@ Kryteria akceptacji:
 
 ## Pytania otwarte: Temirlan
 
-| Nr   | Pytanie                                                                                                                                      | Do kogo | Issue | Status |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----- | ------ |
-| Q-01 | Jakie dokładnie funkcje i jaki interfejs są dla klienta niezbędne? Klient zaznaczył, że zakres pozostaje do doprecyzowania (Pytanie 1).      | klient  | #73   | Open   |
-| Q-02 | Czy po użyciu przycisku awaryjnego zatrzymania gra wraca do stanu początkowego, czy zostaje w stanie, w którym ją zatrzymano (Pytanie 4)?    | klient  | #74   | Open   |
-| Q-03 | Czy uczniowie mogą korzystać z własnych telefonów na lekcji, skoro klient wskazuje rozpraszanie się i problem z regulaminem (Pytania 9, 10)? | klient  | #75   | Open   |
-| Q-04 | W jaki sposób uczeń ma dokończyć w domu na telefonie pracę zaczętą na szkolnym komputerze (Pytania 8, 15)?                                   | klient  | #76   | Open   |
-| Q-05 | Ile czasu uczniowie utrzymują skupienie na jednym zadaniu? Odpowiedź wymaga lekcji pilotażowej (Pytanie 12).                                 | klient  | #77   | Open   |
-| Q-06 | Jak dziś stopniuje Pan/Pani trudność zadań dla uczniów o różnym poziomie umiejętności? (N-09)                                                | klient  | #78   | Open   |
-| Q-07 | Jak uczniowie uruchamiają dziś programy w pracowni, skoro na szkolnych komputerach instalowanie nowych programów bywa zablokowane? (N-06)    | klient  | #79   | Open   |
-| Q-08 | Kto albo co podpowiada dziś uczniowi w domu, co poszło nie tak w jego pracy? (N-08)                                                          | klient  | #80   | Open   |
-| Q-09 | Co powinien zobaczyć kolega, który po raz pierwszy uruchamia czyjąś grę, żeby od razu wiedzieć, co ma robić? (N-12)                          | klient  | #81   | Open   |
-| Q-10 | Co dokładnie rozumie Pan/Pani przez animację w pierwszym projekcie ucznia? (N-03)                                                            | klient  | #82   | Open   |
-| Q-11 | Co powinno się stać, gdy uczeń zapisuje swoją pracę pod nazwą, której już użył? (US-07)                                                      | klient  | #83   | Open   |
-| Q-12 | Co powinno się stać, gdy uczeń próbuje przekazać dalej grę, w której program zawiera błąd? (US-08)                                           | klient  | #84   | Open   |
-| Q-13 | Co musi mieć na telefonie kolega, aby otworzyć grę wysłaną przez ucznia? (US-09)                                                             | klient  | #85   | Open   |
+| Nr | Pytanie | Do kogo |
+|---|---|---|
+| Q-01 | Jakie dokładnie funkcje i jaki interfejs są dla klienta niezbędne? Klient zaznaczył, że zakres pozostaje do doprecyzowania (Pytanie 1). | klient |
+| Q-02 | W jakim stanie powinna zostać gra po użyciu przycisku awaryjnego zatrzymania (Pytanie 4)? | klient |
+| Q-03 | Jakie zasady korzystania z własnych telefonów na lekcji obowiązują dziś uczniów, skoro klient wskazuje rozpraszanie się i problem z regulaminem (Pytania 9, 10)? | klient |
+| Q-04 | W jaki sposób uczeń ma dokończyć w domu na telefonie pracę zaczętą na szkolnym komputerze (Pytania 8, 15)? | klient |
+| Q-05 | Ile czasu uczniowie utrzymują skupienie na jednym zadaniu? Odpowiedź wymaga lekcji pilotażowej (Pytanie 12). | klient |
+| Q-06 | Jak dziś stopniuje Pan/Pani trudność zadań dla uczniów o różnym poziomie umiejętności? (N-09) | klient |
+| Q-07 | Jak uczniowie uruchamiają dziś programy w pracowni, skoro na szkolnych komputerach instalowanie nowych programów bywa zablokowane? (N-06) | klient |
+| Q-08 | Kto albo co podpowiada dziś uczniowi w domu, co poszło nie tak w jego pracy? (N-08) | klient |
+| Q-09 | Co powinien zobaczyć kolega, który po raz pierwszy uruchamia czyjąś grę, żeby od razu wiedzieć, co ma robić? (N-12) | klient |
+| Q-10 | Co dokładnie rozumie Pan/Pani przez animację w pierwszym projekcie ucznia? (N-03) | klient |
+| Q-11 | Co powinno się stać, gdy uczeń zapisuje swoją pracę pod nazwą, której już użył? (US-07) | klient |
+| Q-12 | Co powinno się stać, gdy uczeń próbuje przekazać dalej grę, w której program zawiera błąd? (US-08) | klient |
+| Q-13 | Co musi mieć na telefonie kolega, aby otworzyć grę wysłaną przez ucznia? (US-09) | klient |
