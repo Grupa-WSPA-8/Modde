@@ -1,6 +1,7 @@
-	# Wymagania — Modde
+# Wymagania — Modde
 
-**Wersja:** 0.2
+**Wersja:** 0.3
+**Data:** 2026-11-11
 **Autorzy:** Arsenii Liapin, Bekzhigit Kuatbek, Daryna Melnyk, Daryna Kotiash, Temirlan Kalibekov
 
 ## Zasady wypełniania
@@ -36,46 +37,47 @@
 | FR-04 | System umożliwia Twórcy gier użycie warunku, który wykonuje wskazane klocki tylko wtedy, gdy sprawdzane pytanie ma odpowiedź twierdzącą.                | N-05           | Must      | BR-02        |
 | FR-05 | System umożliwia Twórcy gier użycie pętli, która powtarza wskazane klocki określoną liczbę razy lub dopóki warunek jest spełniony.                      | N-05           | Must      | BR-02        |
 | FR-06 | System umożliwia Twórcy gier zmianę położenia x i y obiektu gry za pomocą klocka.                                                                       | N-03           | Must      | BR-02        |
-| FR-07 | System umożliwia Twórcy gier sprawdzenie za pomocą klocka, czy obiekt gry ma kolizję z obiektem gry wskazanego typu.                                    | karta projektu | Should    | BR-02        |
+| FR-07 | System umożliwia Twórcy gier sprawdzenie za pomocą klocka, czy obiekt gry ma kolizję z obiektem gry wskazanego typu.                                    | karta projektu | Should    | BR-02; brak potrzeby N-xx |
 | FR-08 | System umożliwia Twórcy gier umieszczenie obiektu gry w scenie.                                                                                         | N-03           | Must      |              |
-| FR-09 | System umożliwia Twórcy gier wybór grafiki obiektu lub tła z biblioteki grafik.                                                                         | karta projektu | Should    |              |
+| FR-09 | System umożliwia Twórcy gier wybór grafiki obiektu lub tła z biblioteki grafik.                                                                         | karta projektu | Should    | brak potrzeby N-xx |
 | FR-10 | System umożliwia Twórcy gier uruchomienie gry bezpośrednio w edytorze.                                                                                  | N-01, N-05     | Must      | BR-05        |
 | FR-11 | System zatrzymuje uruchomioną grę po naciśnięciu przycisku „Stop”, zachowując program z klocków bez zmian.                                              | N-04           | Must      |              |
 | FR-12 | System przerywa wykonywanie programu z klocków, w którym pętla nie kończy się w ciągu jednej klatki, bez utraty projektu gry.                           | N-04           | Could     |              |
 | FR-13 | System wyświetla Twórcy gier komunikat o błędzie w programie z klocków ze wskazaniem klocka, którego błąd dotyczy.                                      | N-08           | Should    |              |
 | FR-14 | System wyświetla w trakcie gry aktualną wartość zmiennej wybranej przez Twórcę gier, np. wyniku.                                                        | N-05, N-12     | Should    |              |
-| FR-15 | System umożliwia Twórcy gier zapis projektu gry na urządzeniu.                                                                                          | karta projektu | Must      | BR-03        |
-| FR-16 | System umożliwia Twórcy gier wczytanie zapisanego projektu gry z urządzenia.                                                                            | karta projektu | Should    | BR-03        |
+| FR-15 | System umożliwia Twórcy gier zapis projektu gry na urządzeniu.                                                                                          | karta projektu, N-10 | Must      | BR-03 |
+| FR-16 | System umożliwia Twórcy gier wczytanie zapisanego projektu gry z urządzenia.                                                                            | karta projektu, N-10 | Should    | BR-03 |
 | FR-17 | System umożliwia Twórcy gier eksport projektu gry do pliku jako wyeksportowanej gry.                                                                    | N-11           | Must      | BR-04        |
 | FR-18 | System umożliwia Odbiorcy gry uruchomienie wyeksportowanej gry na innym telefonie niż ten, na którym ją utworzono.                                      | N-11           | Must      | BR-01, BR-04 |
 | FR-19 | System umożliwia Odbiorcy gry sterowanie obiektem gry przez dotknięcie ekranu.                                                                          | N-12           | Should    |              |
-| FR-20 | System umożliwia Twórcy gier otwarcie jednego z dwóch przykładowych projektów gry: gry z widokiem z góry lub prostej platformówki.                      | karta projektu | Could     |              |
-| FR-21 | System umożliwia Twórcy gier korzystanie z edytora i uruchamianie gier także na komputerze, w tej samej aplikacji.                                      | karta projektu | Should    |              |
+| FR-20 | System umożliwia Twórcy gier otwarcie jednego z dwóch przykładowych projektów gry: gry z widokiem z góry lub prostej platformówki.                      | karta projektu | Could     | brak potrzeby N-xx |
+| FR-21 | System umożliwia Twórcy gier korzystanie z edytora i uruchamianie gier także na komputerze, w tej samej aplikacji.                                      | karta projektu, N-10 | Should    | do rozdzielenia? |
+
 ## Wymagania niefunkcjonalne (NFR): Daryna K.
 
 | ID | Kategoria (ISO/IEC 25010) | Treść (mierzalna) | Źródło | Priorytet | Uwagi (sposób sprawdzenia) |
 |---|---|---|---|---|---|
 | NFR-01 | wydajność | Reakcja obiektu gry na dotknięcie ekranu przez Odbiorcę gry jest widoczna na ekranie nie później niż 100 ms po dotknięciu, w scenie z 50 obiektami gry, na telefonie z Androidem z 3 GB pamięci RAM. | N-12 | Should | Pomiar na telefonie z Androidem: 20 dotknięć, w co najmniej 19 z nich czas ≤ 100 ms. Wartość 100 ms oraz parametry telefonu: wartość założona przez zespół, do potwierdzenia. |
 | NFR-02 | wydajność | W trakcie uruchomionej gry system rysuje średnio co najmniej 30 klatek na sekundę, w scenie z 50 obiektami gry, przez 5 minut ciągłej gry, na telefonie z Androidem z 3 GB pamięci RAM. | N-01, karta projektu | Should | Pomiar liczby klatek na sekundę na telefonie z Androidem w 3 uruchomieniach po 5 minut. Wartości 30 klatek, 50 obiektów, 5 minut i 3 GB: wartość założona przez zespół, do potwierdzenia. |
-| NFR-03 | niezawodność | Od naciśnięcia przycisku „Stop” do zatrzymania uruchomionej gry mija nie więcej niż 1 sekunda, także gdy program z klocków zawiera pętlę, która nie kończy się, a po zatrzymaniu liczba klocków w programie z klocków jest równa liczbie sprzed uruchomienia (0 utraconych klocków). | N-04 | Must | Test na 10 programach z klocków z pętlą bez końca, na telefonie z Androidem: 10 z 10 zatrzymań w czasie ≤ 1 s i 0 utraconych klocków. Wartość 1 s: wartość założona przez zespół, do potwierdzenia. |
+| NFR-03 | niezawodność | Od naciśnięcia przycisku „Stop” do zatrzymania uruchomionej gry mija nie więcej niż 1 sekunda, także gdy program z klocków zawiera pętlę, która nie kończy się, a po zatrzymaniu liczba klocków w programie z klocków jest równa liczbie sprzed uruchomienia (0 utraconych klocków). | N-04 | Must | Test na 10 programach z klocków z pętlą bez końca, na telefonie z Androidem: 10 z 10 zatrzymań w czasie ≤ 1 s i 0 utraconych klocków. Wartość 1 s: wartość założona przez zespół, do potwierdzenia. Do rozdzielenia? |
 | NFR-04 | użyteczność | Twórca gier, który wcześniej nie używał aplikacji, w ciągu 60 minut od pierwszego uruchomienia samodzielnie tworzy prosty interaktywny projekt (obiekt gry, który porusza się po zdarzeniu „dotknięcie ekranu”); wymaganie spełnia co najmniej 4 z 5 uczniów. | N-03 | Must | Test na 5 uczniach podczas lekcji pilotażowej, czas mierzony stoperem. Próg 60 minut wynika z wywiadu (pytanie 2); próg 4 z 5 uczniów: wartość założona przez zespół, do potwierdzenia. |
-| NFR-05 | użyteczność | Każdy klocek i przycisk „Stop” w edytorze ma obszar dotyku co najmniej 9 × 9 mm na ekranie telefonu o przekątnej 5,5 cala, a Twórca gier trafia w wybrany element w co najmniej 9 na 10 prób. | N-07, N-04 | Should | Pomiar rozmiaru elementów na telefonie z Androidem oraz test na 5 uczniach (po 10 prób każdy). Wartości 9 mm i 9 na 10: wartość założona przez zespół, do potwierdzenia. |
-| NFR-06 | użyteczność | Komunikat o błędzie w programie z klocków pojawia się w ciągu 2 sekund od uruchomienia gry i pozwala co najmniej 4 z 5 uczniów wskazać błędny klocek w ciągu 2 minut, bez pomocy innej osoby. | N-08 | Should | Test na 5 uczniach z 3 programami z klocków zawierającymi błąd, czas mierzony stoperem. Wartości 2 s, 2 minuty i 4 z 5: wartość założona przez zespół, do potwierdzenia. |
+| NFR-05 | użyteczność | Każdy klocek i przycisk „Stop” w edytorze ma obszar dotyku co najmniej 9 × 9 mm na ekranie telefonu o przekątnej 5,5 cala, a Twórca gier trafia w wybrany element w co najmniej 9 na 10 prób. | N-07, N-04 | Should | Pomiar rozmiaru elementów na telefonie z Androidem oraz test na 5 uczniach (po 10 prób każdy). Wartości 9 mm i 9 na 10: wartość założona przez zespół, do potwierdzenia. Do rozdzielenia? |
+| NFR-06 | użyteczność | Komunikat o błędzie w programie z klocków pojawia się w ciągu 2 sekund od uruchomienia gry i pozwala co najmniej 4 z 5 uczniów wskazać błędny klocek w ciągu 2 minut, bez pomocy innej osoby. | N-08 | Should | Test na 5 uczniach z 3 programami z klocków zawierającymi błąd, czas mierzony stoperem. Wartości 2 s, 2 minuty i 4 z 5: wartość założona przez zespół, do potwierdzenia. Do rozdzielenia? |
 | NFR-07 | kompatybilność | Edytor wyświetla się w całości, bez obciętych klocków i przycisków, na ekranach telefonów o przekątnej od 5,0 do 6,7 cala, w orientacji pionowej i poziomej. | N-07 | Should | Sprawdzenie na 3 telefonach z Androidem o przekątnych 5,0; 5,5 i 6,7 cala: 0 obciętych elementów. Zakres przekątnych: wartość założona przez zespół, do potwierdzenia. |
 | NFR-08 | kompatybilność | Wyeksportowana gra otwiera się i uruchamia na innym telefonie z Androidem niż ten, na którym ją utworzono, w 10 z 10 prób, po przesłaniu pliku przez komunikator. | N-11, karta projektu | Must | Test na 2 różnych telefonach z Androidem, 10 prób. Liczba prób i sposób przesłania pliku: wartość założona przez zespół, do potwierdzenia. |
 | NFR-09 | przenośność | Aplikację można uruchomić na komputerze z kontem bez uprawnień administratora, na którym instalowanie programów jest zablokowane, wykonując nie więcej niż 3 czynności Twórcy gier od pobrania aplikacji do widoku edytora. | N-06, karta projektu | Should | Test w pracowni szkolnej na komputerze z zablokowaną instalacją, 3 próby, liczenie czynności. Wartość 3 czynności: wartość założona przez zespół, do potwierdzenia. |
-| NFR-10 | bezpieczeństwo | W ciągu 30 minut użytkowania aplikacji (układanie programu z klocków, zapis projektu gry, uruchomienie gry, eksport) system wysyła poza urządzenie 0 bajtów danych Twórcy gier. | karta projektu | Must | Test na telefonie z Androidem z rejestrowaniem ruchu sieciowego przez 30 minut: 0 połączeń wychodzących z danymi Twórcy gier. Czas 30 minut: wartość założona przez zespół, do potwierdzenia. |
+| NFR-10 | bezpieczeństwo | W ciągu 30 minut użytkowania aplikacji (układanie programu z klocków, zapis projektu gry, uruchomienie gry, eksport) system wysyła poza urządzenie 0 bajtów danych Twórcy gier. | karta projektu | Must | Test na telefonie z Androidem z rejestrowaniem ruchu sieciowego przez 30 minut: 0 połączeń wychodzących z danymi Twórcy gier. Czas 30 minut: wartość założona przez zespół, do potwierdzenia. Brak potrzeby N-xx. |
 
 ## Reguły biznesowe (BR): Temirlan
 
 | ID    | Reguła                                                                                                                       | Źródło                                              | Uwagi (których FR dotyczy)               |
 | ----- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------- |
 | BR-01 | Odbiorca gry może tylko uruchomić wyeksportowaną grę, nie może jej zmieniać.                                                 | słownik: Odbiorca gry                               | FR-18                                    |
-| BR-02 | Twórca gier układa program wyłącznie ze stałego zestawu klocków i nie może dodawać własnych.                                 | karta projektu, „Zakres IN” i „Główne założenia”    | FR-01, FR-03, FR-04, FR-05, FR-06, FR-07 |
-| BR-03 | Projekt gry jest zapisywany wyłącznie lokalnie na urządzeniu Twórcy gier, bez kont użytkowników.                             | karta projektu, „Główne założenia”                  | FR-15, FR-16                             |
-| BR-04 | Odbiorca gry otrzymuje wyeksportowaną grę od Twórcy gier jako plik, bez publikacji w sklepach z aplikacjami.                 | słownik: Odbiorca gry; karta projektu, „Zakres OUT” | FR-17, FR-18                             |
+| BR-02 | Twórca gier układa program wyłącznie ze stałego zestawu klocków i nie może dodawać własnych.                                 | karta projektu, „Zakres IN” i „Główne założenia” | FR-01, FR-03, FR-04, FR-05, FR-06, FR-07; brak potrzeby N-xx |
+| BR-03 | Projekt gry jest zapisywany wyłącznie lokalnie na urządzeniu Twórcy gier, bez kont użytkowników.                             | karta projektu, „Główne założenia” | FR-15, FR-16; brak potrzeby N-xx |
+| BR-04 | Odbiorca gry otrzymuje wyeksportowaną grę od Twórcy gier jako plik, bez publikacji w sklepach z aplikacjami.                 | słownik: Odbiorca gry; karta projektu, „Zakres OUT”; N-11 | FR-17, FR-18 |
 | BR-05 | Obiekt gry wykonuje przypisany mu program z klocków dopiero wtedy, gdy wystąpi zdarzenie, do którego ten program przypisano. | słownik: Zdarzenie                                  | FR-02, FR-10                             |
-| BR-06 | Dane osobowe użytkowników nie są zbierane ani przetwarzane.                                                                  | karta projektu, „Główne założenia”                  | brak FR; zob. NFR-10                     |
+| BR-06 | Dane osobowe użytkowników nie są zbierane ani przetwarzane.                                                                  | karta projektu, „Główne założenia” | brak FR; zob. NFR-10; brak potrzeby N-xx |
 
 ## Ograniczenia: Daryna K.
 
@@ -192,16 +194,16 @@ Wymagania: FR-11, NFR-03 · Priorytet: Must
 
 Kryteria akceptacji:
 - **Scenariusz 1: Zatrzymanie działającej gry**
-  - **Given** uruchomiłem grę w edytorze, a program z klocków zawiera 12 klocków,
-  - **When** naciskam przycisk „Stop”,
+  - **Given** Twórca gier uruchomił grę w edytorze, a program z klocków zawiera 12 klocków,
+  - **When** Twórca gier naciska przycisk „Stop”,
   - **Then** uruchomiona gra zostaje zatrzymana.
 - **Scenariusz 2: Pętla, która się nie kończy**
-  - **Given** uruchomiłem grę, w której program z klocków zawiera pętlę, która się nie kończy,
-  - **When** naciskam przycisk „Stop”,
+  - **Given** Twórca gier uruchomił grę, w której program z klocków zawiera pętlę, która się nie kończy,
+  - **When** Twórca gier naciska przycisk „Stop”,
   - **Then** gra zostaje zatrzymana nie później niż 1 sekundę po naciśnięciu przycisku (NFR-03).
 - **Scenariusz 3: Program z klocków po zatrzymaniu**
   - **Given** program z klocków zawierał 12 klocków przed uruchomieniem gry, a gra została zatrzymana przyciskiem „Stop”,
-  - **When** wracam do programu z klocków,
+  - **When** Twórca gier wraca do programu z klocków,
   - **Then** program z klocków nadal zawiera 12 klocków, czyli 0 utraconych klocków (NFR-03).
 
 #### US-07: Zapis projektu gry na urządzeniu
@@ -211,12 +213,12 @@ Wymagania: FR-15, BR-03 · Priorytet: Must
 
 Kryteria akceptacji:
 - **Scenariusz 1: Zapis projektu gry**
-  - **Given** ułożyłem program z klocków w projekcie gry „Las”,
-  - **When** zapisuję projekt gry,
-  - **Then** projekt gry „Las” jest zapisany na moim urządzeniu.
+  - **Given** Twórca gier ułożył program z klocków w projekcie gry „Las”,
+  - **When** Twórca gier zapisuje projekt gry,
+  - **Then** projekt gry „Las” jest zapisany na urządzeniu Twórcy gier.
 - **Scenariusz 2: Zapis bez konta użytkownika**
-  - **Given** nie mam konta użytkownika i nie jestem zalogowany,
-  - **When** zapisuję projekt gry „Las”,
+  - **Given** Twórca gier nie ma konta użytkownika i nie jest zalogowany,
+  - **When** Twórca gier zapisuje projekt gry „Las”,
   - **Then** projekt gry zostaje zapisany lokalnie na urządzeniu, bez prośby o założenie konta lub zalogowanie (BR-03).
 
 #### US-08: Eksport gry do pliku
@@ -226,12 +228,12 @@ Wymagania: FR-17, BR-04 · Priorytet: Must
 
 Kryteria akceptacji:
 - **Scenariusz 1: Eksport projektu gry**
-  - **Given** mam zapisany projekt gry „Las”,
-  - **When** eksportuję projekt gry,
-  - **Then** na moim urządzeniu powstaje plik wyeksportowanej gry „Las”.
+  - **Given** Twórca gier ma zapisany projekt gry „Las”,
+  - **When** Twórca gier eksportuje projekt gry,
+  - **Then** na urządzeniu Twórcy gier powstaje plik wyeksportowanej gry „Las”.
 - **Scenariusz 2: Przekazanie gry jako pliku**
-  - **Given** mam plik wyeksportowanej gry „Las”,
-  - **When** przesyłam ten plik Odbiorcy gry przez komunikator,
+  - **Given** Twórca gier ma plik wyeksportowanej gry „Las”,
+  - **When** Twórca gier przesyła ten plik Odbiorcy gry przez komunikator,
   - **Then** Odbiorca gry otrzymuje grę jako plik, bez publikacji gry w sklepie z aplikacjami (BR-04).
 
 #### US-09: Uruchomienie otrzymanej gry przez Odbiorcę gry
@@ -241,16 +243,16 @@ Wymagania: FR-18, BR-01, BR-04, NFR-08 · Priorytet: Must
 
 Kryteria akceptacji:
 - **Scenariusz 1: Uruchomienie otrzymanej gry**
-  - **Given** otrzymałem przez komunikator plik wyeksportowanej gry „Las” utworzonej na innym telefonie,
-  - **When** otwieram ten plik na swoim telefonie,
+  - **Given** Odbiorca gry otrzymał przez komunikator plik wyeksportowanej gry „Las” utworzonej na innym telefonie,
+  - **When** Odbiorca gry otwiera ten plik na swoim telefonie,
   - **Then** gra „Las” uruchamia się.
 - **Scenariusz 2: Próba zmiany otrzymanej gry**
-  - **Given** uruchomiłem otrzymaną wyeksportowaną grę „Las”,
-  - **When** próbuję zmienić program z klocków tej gry,
+  - **Given** Odbiorca gry uruchomił otrzymaną wyeksportowaną grę „Las”,
+  - **When** Odbiorca gry próbuje zmienić program z klocków tej gry,
   - **Then** system nie pozwala na zmianę i gra pozostaje taka, jaką przygotował Twórca gier (BR-01).
 - **Scenariusz 3: Gra bez sklepu z aplikacjami**
-  - **Given** otrzymałem wyeksportowaną grę „Las” jako plik, a gra nie jest opublikowana w sklepie z aplikacjami,
-  - **When** otwieram ten plik,
+  - **Given** Odbiorca gry otrzymał wyeksportowaną grę „Las” jako plik, a gra nie jest opublikowana w sklepie z aplikacjami,
+  - **When** Odbiorca gry otwiera ten plik,
   - **Then** gra uruchamia się bez pobierania jej ze sklepu z aplikacjami (BR-04).
 - **Scenariusz 4: Uruchomienie na innym telefonie z Androidem**
   - **Given** plik wyeksportowanej gry „Las” przesłano przez komunikator 10 razy na inny telefon z Androidem,
