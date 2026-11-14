@@ -1,7 +1,7 @@
 # Wymagania — Modde
 
-**Wersja:** 0.3
-**Data:** 2026-11-11
+**Wersja:** 0.4
+**Data:** 2026-11-14
 **Autorzy:** Arsenii Liapin, Bekzhigit Kuatbek, Daryna Melnyk, Daryna Kotiash, Temirlan Kalibekov
 
 ## Zasady wypełniania
@@ -52,6 +52,8 @@
 | FR-19 | System umożliwia Odbiorcy gry sterowanie obiektem gry przez dotknięcie ekranu.                                                                          | N-12           | Should    |              |
 | FR-20 | System umożliwia Twórcy gier otwarcie jednego z dwóch przykładowych projektów gry: gry z widokiem z góry lub prostej platformówki.                      | karta projektu | Could     | brak potrzeby N-xx |
 | FR-21 | System umożliwia Twórcy gier korzystanie z edytora i uruchamianie gier także na komputerze, w tej samej aplikacji.                                      | karta projektu, N-10 | Should    | do rozdzielenia? |
+| FR-22 | System umożliwia Twórcy gier utworzenie nowego projektu gry z pustą sceną. | N-03 | Must | BR-03; walkthrough P-01.1 |
+| FR-23 | System wyświetla Twórcy gier komunikat, gdy zapisany projekt gry nie daje się wczytać. | N-10, N-11 | Should | FR-16; walkthrough P-03.6 |
 
 ## Wymagania niefunkcjonalne (NFR): Daryna K.
 
@@ -74,7 +76,7 @@
 | ----- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------- |
 | BR-01 | Odbiorca gry może tylko uruchomić wyeksportowaną grę, nie może jej zmieniać.                                                 | słownik: Odbiorca gry                               | FR-18                                    |
 | BR-02 | Twórca gier układa program wyłącznie ze stałego zestawu klocków i nie może dodawać własnych.                                 | karta projektu, „Zakres IN” i „Główne założenia” | FR-01, FR-03, FR-04, FR-05, FR-06, FR-07; brak potrzeby N-xx |
-| BR-03 | Projekt gry jest zapisywany wyłącznie lokalnie na urządzeniu Twórcy gier, bez kont użytkowników.                             | karta projektu, „Główne założenia” | FR-15, FR-16; brak potrzeby N-xx |
+| BR-03 | Projekt gry jest zapisywany wyłącznie lokalnie na urządzeniu Twórcy gier, bez kont użytkowników. Twórca gier może sam przenieść plik projektu gry na inne urządzenie poza aplikacją. | karta projektu, „Główne założenia”; N-10 | FR-15, FR-16, FR-22, FR-23; walkthrough P-03.4; priorytet: Must |
 | BR-04 | Odbiorca gry otrzymuje wyeksportowaną grę od Twórcy gier jako plik, bez publikacji w sklepach z aplikacjami.                 | słownik: Odbiorca gry; karta projektu, „Zakres OUT”; N-11 | FR-17, FR-18 |
 | BR-05 | Obiekt gry wykonuje przypisany mu program z klocków dopiero wtedy, gdy wystąpi zdarzenie, do którego ten program przypisano. | słownik: Zdarzenie                                  | FR-02, FR-10                             |
 | BR-06 | Dane osobowe użytkowników nie są zbierane ani przetwarzane.                                                                  | karta projektu, „Główne założenia” | brak FR; zob. NFR-10; brak potrzeby N-xx |
@@ -258,6 +260,21 @@ Kryteria akceptacji:
   - **Given** plik wyeksportowanej gry „Las” przesłano przez komunikator 10 razy na inny telefon z Androidem,
   - **When** Odbiorca gry otwiera plik po każdym przesłaniu,
   - **Then** gra uruchamia się w 10 z 10 prób (NFR-08).
+
+#### US-10: Utworzenie nowego projektu gry
+Wymagania: FR-22, BR-03 · Priorytet: Must
+
+**Jako** Twórca gier **chcę** utworzyć nowy projekt gry, **aby** od razu zacząć budować własną grę od pustej sceny.
+
+Kryteria akceptacji:
+- **Scenariusz 1: Utworzenie nowego projektu gry**
+  - **Given** Twórca gier nie ma otwartego projektu gry,
+  - **When** Twórca gier tworzy nowy projekt gry,
+  - **Then** otwiera się nowy projekt gry z pustą sceną.
+- **Scenariusz 2: Utworzenie projektu gry bez konta użytkownika**
+  - **Given** Twórca gier nie ma konta użytkownika i nie jest zalogowany,
+  - **When** Twórca gier tworzy nowy projekt gry,
+  - **Then** nowy projekt gry zostaje utworzony bez prośby o założenie konta lub zalogowanie (BR-03).
 
 ## Pytania otwarte: Temirlan
 
