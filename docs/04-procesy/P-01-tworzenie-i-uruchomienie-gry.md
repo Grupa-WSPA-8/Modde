@@ -27,50 +27,9 @@ Pula: aplikacja Modde (jedna pula, dwa tory). Słownik definiuje Silnik jako ca�
 
 ## Diagram
 
-```mermaid
-flowchart TD
-    subgraph TG["Tor: Twórca gier"]
-        START(("Start: Twórca gier chce zbudować grę"))
-        T1["P-01.1 Otwarcie lub utworzenie projektu gry"]
-        T2["P-01.2 Umieszczenie obiektu gry w scenie"]
-        T3["P-01.3 Wybór grafiki obiektu"]
-        T4["P-01.4 Ułożenie programu z klocków"]
-        T5["P-01.5 Przypisanie programu z klocków do zdarzenia"]
-        D1{"Uruchomić grę?"}
-        T6["P-01.6 Uruchomienie gry w edytorze"]
-        T8["P-01.8 Wywołanie zdarzenia dotknięciem ekranu"]
-        T10["P-01.10 Zatrzymanie gry przyciskiem Stop"]
-        D3{"Co dalej?"}
-        T12["P-01.12 Zlecenie zapisu projektu gry"]
-        T14["P-01.14 Przejście do P-02"]
-        END1(("Koniec: gra zatrzymana"))
-        END2(("Koniec: projekt gry zapisany"))
-        END3(("Koniec: rezygnacja"))
-    end
-    subgraph SI["Tor: Silnik"]
-        S7["P-01.7 Wyświetlenie uruchomionej gry w scenie"]
-        D2{"Błąd w programie z klocków?"}
-        W1["Wyświetlenie komunikatu o błędzie (W-01)"]
-        S9["P-01.9 Wykonanie programu z klocków po zdarzeniu"]
-        S11["P-01.11 Zatrzymanie gry z zachowaniem programu z klocków"]
-        S13["P-01.13 Zapisanie projektu gry na urządzeniu"]
-    end
+![P-01 Tworzenie i uruchomienie gry](P-01-tworzenie-i-uruchomienie-gry.svg)
 
-    START --> T1 --> T2 --> T3 --> T4 --> T5 --> D1
-    D1 -->|"Tak"| T6
-    D1 -->|"Nie, rezygnacja"| END3
-    T6 --> S7 --> D2
-    D2 -->|"Tak"| W1
-    W1 -->|"Poprawa programu"| T4
-    D2 -->|"Nie"| T8
-    T8 --> S9 --> T10 --> S11 --> D3
-    D3 -->|"Dalsza zmiana programu"| T4
-    D3 -->|"Zapis projektu gry"| T12
-    D3 -->|"Zakończenie testu bez zapisu"| END1
-    T12 --> S13 --> T14 --> END2
-```
-
-Diagram BPMN: w przygotowaniu (osobne zadanie).
+Źródło: [P-01-tworzenie-i-uruchomienie-gry.bpmn](P-01-tworzenie-i-uruchomienie-gry.bpmn) (bpmn.io)
 
 ## Kroki
 
