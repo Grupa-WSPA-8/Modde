@@ -76,7 +76,7 @@ Diagram BPMN: w przygotowaniu (osobne zadanie).
 
 | Krok | Tor | Typ zadania | Opis | Wymagania |
 |---|---|---|---|---|
-| P-01.1 Otwarcie lub utworzenie projektu gry | Twórca gier | użytkownika | Twórca gier wczytuje zapisany projekt gry, otwiera jeden z dwóch przykładowych projektów gry albo zaczyna nowy projekt gry. | FR-16, FR-20; utworzenie nowego projektu gry: brak — do walkthrough |
+| P-01.1 Otwarcie lub utworzenie projektu gry | Twórca gier | użytkownika | Twórca gier wczytuje zapisany projekt gry, otwiera jeden z dwóch przykładowych projektów gry albo zaczyna nowy projekt gry. | FR-16, FR-20, FR-22 |
 | P-01.2 Umieszczenie obiektu gry w scenie | Twórca gier | użytkownika | Twórca gier umieszcza obiekt gry w scenie projektu gry. | FR-08 |
 | P-01.3 Wybór grafiki obiektu | Twórca gier | użytkownika | Twórca gier wybiera grafikę obiektu lub tła z biblioteki grafik. | FR-09 |
 | P-01.4 Ułożenie programu z klocków | Twórca gier | użytkownika | Twórca gier dodaje klocki do programu z klocków metodą „przeciągnij i upuść”, m.in. klocki zmiennej, warunku, pętli i położenia, wyłącznie ze stałego zestawu klocków. | FR-01, FR-03, FR-04, FR-05, FR-06, BR-02 |
@@ -89,7 +89,7 @@ Diagram BPMN: w przygotowaniu (osobne zadanie).
 | P-01.11 Zatrzymanie gry z zachowaniem programu z klocków | Silnik | usługi | Silnik zatrzymuje grę nie później niż 1 sekundę po naciśnięciu przycisku „Stop” i zachowuje program z klocków bez zmian (0 utraconych klocków). | FR-11, NFR-03 |
 | P-01.12 Zlecenie zapisu projektu gry | Twórca gier | użytkownika | Twórca gier zleca zapis projektu gry na swoim urządzeniu, bez zakładania konta. | FR-15, BR-03 |
 | P-01.13 Zapisanie projektu gry na urządzeniu | Silnik | usługi | Silnik zapisuje projekt gry lokalnie na urządzeniu Twórcy gier. | FR-15, BR-03 |
-| P-01.14 Przejście do P-02 | Twórca gier | użytkownika | Po zapisaniu projektu gry Twórca gier przechodzi do procesu P-02. | brak — do walkthrough |
+| P-01.14 Przejście do P-02 | Twórca gier | użytkownika | Po zapisaniu projektu gry Twórca gier przechodzi do procesu P-02. | — (przejście do innego procesu, a nie funkcja systemu) |
 
 ## Wyjątki i ścieżki alternatywne
 
@@ -99,8 +99,8 @@ Diagram BPMN: w przygotowaniu (osobne zadanie).
 | W-02 Pętla, która się nie kończy | P-01.9 | Silnik przerywa wykonywanie programu z klocków, w którym pętla nie kończy się w ciągu jednej klatki, bez utraty projektu gry. Twórca gier może też nacisnąć „Stop”; gra zatrzymuje się nie później niż po 1 sekundzie, a liczba klocków pozostaje bez zmian. | FR-12, FR-11, NFR-03 |
 | W-03 Program z klocków bez przypisanego zdarzenia | P-01.6, P-01.9 | Obiekt gry nie wykonuje programu z klocków, bo nie wystąpiło zdarzenie, do którego go przypisano. Twórca gier wraca do P-01.5 i przypisuje program z klocków do zdarzenia. | BR-05 |
 | W-04 Próba dodania własnego klocka | P-01.4 | Program z klocków nie zawiera własnego klocka; Twórca gier układa program wyłącznie ze stałego zestawu klocków. | BR-02 |
-| W-05 Nazwa projektu gry już użyta przy zapisie | P-01.12 | Reakcja Silnika do ustalenia z klientem (zob. Otwarte pytania). | brak — do walkthrough |
-| W-06 Rezygnacja przed uruchomieniem gry | po P-01.5 | Twórca gier przerywa pracę, nie uruchamia gry i nie zapisuje projektu gry (zdarzenie końcowe „rezygnacja”). | brak — do walkthrough |
+| W-05 Nazwa projektu gry już użyta przy zapisie | P-01.12 | Reakcja Silnika do ustalenia z klientem (zob. Otwarte pytania). | brak — pytanie do klienta (Q-11) |
+| W-06 Rezygnacja przed uruchomieniem gry | po P-01.5 | Twórca gier przerywa pracę, nie uruchamia gry i nie zapisuje projektu gry (zdarzenie końcowe „rezygnacja”). | — (Twórca gier przerywa pracę, system nie wykonuje żadnej czynności) |
 
 ## Zmiany względem AS-IS
 
