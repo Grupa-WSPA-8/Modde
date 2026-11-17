@@ -75,12 +75,12 @@ Wynik macierzy to argument, a nie wyrocznia. W obszarze interfejsu różnica jes
 | repozytorium        | Git + GitHub (organizacja), GitHub Desktop jako klient dla osób bez doświadczenia z linią poleceń | repozytorium Git                                                                                                        |
 | zadania             | GitHub Projects + Issues                                                                          | karty na tablicy w organizacji, powiązane z pull requestami                                                             |
 | dokumentacja        | Markdown w katalogu `docs/` (edycja m.in. w Obsidian i w edytorze GitHub)                         | pliki `.md`                                                                                                             |
-| diagramy UML / BPMN | Mermaid; złożone diagramy: draw.io                                                                | blok `mermaid` w pliku `.md`; ewentualnie `.drawio` + eksport PNG w `docs/diagramy/`                                    |
+| diagramy UML / BPMN | Mermaid; główny proces TO-BE: bpmn.io (BPMN 2.0, zgodnie z wymaganiami przedmiotu); złożone diagramy: draw.io | blok `mermaid` w pliku `.md`; dla głównego procesu TO-BE `.bpmn` + eksport `.svg` w `docs/04-procesy/`; ewentualnie `.drawio` + eksport PNG obok pliku `.md`, którego dotyczy |
 | model danych        | Mermaid (diagram ER / klas); format zapisu gry opisany w `contract/`                              | `.md` z diagramem; opis formatu w `contract/`                                                                           |
 | interfejs           | Figma; wstępne ekrany generowane w Google Stitch                                                  | eksport PNG/PDF w `design/mockups/`, link w `design/figma-link.md`, plik `design/DESIGN.md` (paleta, czcionki, odstępy) |
 | komunikacja         | Telegram                                                                                          | nie dotyczy                                                                                                             |
 
-Narzędzia open source użyte w projekcie: Git, Mermaid, draw.io.
+Narzędzia open source użyte w projekcie: Git, Mermaid, draw.io, bpmn.io.
 
 ## Konsekwencje
 
