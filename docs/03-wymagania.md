@@ -293,3 +293,8 @@ Kryteria akceptacji:
 | Q-11 | Co powinno się stać, gdy uczeń zapisuje swoją pracę pod nazwą, której już użył? (US-07) | klient |
 | Q-12 | Co powinno się stać, gdy uczeń próbuje przekazać dalej grę, w której program zawiera błąd? (US-08) | klient |
 | Q-13 | Co musi mieć na telefonie kolega, aby otworzyć grę wysłaną przez ucznia? (US-09) | klient |
+| Q-14 | Gdzie uczeń zapisuje swoją pracę w pracowni szkolnej i co się z nią dzieje po lekcji, zanim zacznie ją dokańczać w domu? (P-00.5) | klient |
+| Q-15 | Skąd uczniowie dostają ćwiczenia do wykonania w domu i w jakiej formie (np. plik, wydruk, wiadomość)? (P-00.6) | klient |
+| Q-16 | Jak Pan/Pani sprawdza i ocenia prace po ich zebraniu (np. według jakich kryteriów) i ile czasu zajmuje to przy całej klasie? (P-00.10) | klient |
+| Q-17 | Co robi Pan/Pani, gdy zebrana praca nie otwiera się na komputerze? (P-00.9) | klient |
+| Q-18 | Kiedy i na jakich zasadach uczeń ma dostęp do komputera w pracowni szkolnej po lekcji, np. gdy zapomni zapisać swoją pracę? (P-03.2) | klient |
