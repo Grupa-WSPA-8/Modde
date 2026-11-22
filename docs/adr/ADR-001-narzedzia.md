@@ -1,12 +1,12 @@
 # ADR-001: Narzędzia pracy projektowej
 
-**Status:** proponowana
+**Status:** przyjęta
 **Data:** 2026-10-20
 **Autorzy:** Arsenii Liapin (z zespołem)
 
 ## Kontekst
 
-Zespół 4 osób, praca zdalna i na zajęciach, zróżnicowane doświadczenie z narzędziami (część osób nie pracowała wcześniej z Git w zespole). Dokumentacja musi być dostępna również w semestrze 2. Repozytorium znajduje się w organizacji GitHub, a prowadzący ma do niego dostęp. Projekt nie ma serwera: dane są przechowywane lokalnie na urządzeniu (sposób przechowywania do ustalenia). Wybór technologii programistycznej (język, biblioteki) nie jest przedmiotem tego ADR i zostanie zapisany w ADR-002 po wykonaniu prototypu.
+Zespół 4 osób, praca zdalna i na zajęciach, zróżnicowane doświadczenie z narzędziami (część osób nie pracowała wcześniej z Git w zespole). Dokumentacja musi być dostępna również w semestrze 2. Repozytorium znajduje się w organizacji GitHub, a prowadzący ma do niego dostęp. Projekt nie ma serwera: dane są przechowywane lokalnie na urządzeniu (sposób przechowywania do ustalenia). Wybór technologii programistycznej (język, biblioteki) nie jest przedmiotem tego ADR i zostanie zapisany w ADR-003 po wykonaniu prototypu.
 
 ## Rozważane opcje
 
@@ -95,10 +95,10 @@ Co tracimy / jakie są ryzyka:
 - Google Stitch jest eksperymentem Google Labs: limity i funkcje (w tym eksport do Figma) mogą się zmienić. Ograniczamy ryzyko, trzymając w repozytorium eksporty gotowych makiet.
 - Wynik macierzy dla interfejsu jest bliski (Figma 48, Penpot 46). Jeśli Figma lub Stitch przestaną być dostępne, przechodzimy na Penpot.
 - Obsidian jest narzędziem własnościowym (używanym tylko jako edytor plików Markdown), więc nie jest wymagany do pracy.
-- Wybór technologii programistycznej odłożono do ADR-002.
+- Wybór technologii programistycznej odłożono do ADR-003.
 
 Co musimy zrobić:
 - Dodać `.obsidian/` do `.gitignore` oraz ustawić w Obsidian zwykłe linki Markdown (nie wikilinki). (Arsenii)
 - Przygotować krótką instrukcję pracy z GitHub Desktop dla zespołu. (Arsenii)
 - Utworzyć `design/figma-link.md` i `design/DESIGN.md` po wygenerowaniu pierwszych ekranów. (Daryna K.)
-- Napisać ADR-002 (technologia) po wykonaniu prototypu. (Arsenii)
+- Napisać ADR-003 (technologia) po wykonaniu prototypu. (Arsenii)
