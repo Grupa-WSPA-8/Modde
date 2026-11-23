@@ -153,7 +153,7 @@ Dla naszego systemu:
 
 ## 13. Wstępnie rozważane technologie
 
-Ta część nie jest najważniejsza na tym etapie. Poniżej zapisano technologie rozważane wstępnie. Ostateczny wybór zostanie potwierdzony po wykonaniu prototypu i zapisany w ADR-002.
+Ta część nie jest najważniejsza na tym etapie. Poniżej zapisano technologie rozważane wstępnie. Ostateczny wybór zostanie potwierdzony po wykonaniu prototypu i zapisany w ADR-003.
 
 Platforma:
 

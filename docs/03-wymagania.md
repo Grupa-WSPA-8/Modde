@@ -83,12 +83,12 @@
 
 ## Ograniczenia: Daryna K.
 
-- Aplikacja musi działać na telefonie z systemem Android oraz na komputerze (uzasadnienie: poza szkołą uczniowie mają głównie smartfon, a w pracowni szkolnej komputery stacjonarne lub laptopy; wywiad-1, pytanie 9, N-07, karta projektu)
+- System musi działać na telefonie oraz na komputerze (uzasadnienie: poza szkołą uczniowie mają głównie smartfon, a w pracowni szkolnej komputery stacjonarne lub laptopy; wywiad-1, pytanie 9, N-07, karta projektu; forma aplikacji instalowanej na Androidzie: ADR-002)
 - Na szkolnych komputerach nie można zakładać możliwości instalowania nowych programów (uzasadnienie: instalowanie nowych programów na szkolnych komputerach bywa zablokowane; wywiad-1, pytanie 6, N-06)
 - Grafiki obiektów gry i teł muszą pochodzić z zasobów przygotowanych przez zespół lub z otwartych źródeł, na licencjach dopuszczających takie użycie (uzasadnienie: projekt korzysta z gotowego zestawu grafik, a warunki licencji narzucają ich autorzy; karta projektu, sekcja „Główne założenia”)
 - Dokumentacja powstaje w pierwszym semestrze, a kod aplikacji w drugim, a zakres projektu zatwierdza prowadzący przedmiot (uzasadnienie: terminy i zasady oceny wynikają z przedmiotu; karta projektu, sekcje „Interesariusze” i „Wstępne ryzyka”)
 - Projekt realizuje zespół pięciu osób (uzasadnienie: skład zespołu jest wskazany w karcie projektu, a zakres musi być wykonalny dla tego składu)
-- Wybór technologii jest wstępny i wymaga potwierdzenia po wykonaniu prototypu (uzasadnienie: do potwierdzenia w ADR-002; karta projektu, sekcja „Wstępnie rozważane technologie”)
+- Wybór technologii jest wstępny i wymaga potwierdzenia po wykonaniu prototypu (uzasadnienie: do potwierdzenia w ADR-003; karta projektu, sekcja „Wstępnie rozważane technologie”)
 
 ## Historyjki użytkownika: Daryna K.
 
