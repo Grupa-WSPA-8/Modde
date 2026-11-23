@@ -1,35 +1,39 @@
-# Diagram kontekstu
+# Kontekst systemu (C4, poziom 1) – Modde
 
-System Modde pokazany jako jedna całość, z rolami użytkowników i elementami zewnętrznymi, z którymi wymienia informacje.
+**Wersja:** 0.2
+
+## Diagram
 
 ```mermaid
 flowchart LR
-    T([Twórca gier])
-    O([Odbiorca gry])
-    S[System Modde]
-    P[Pamięć urządzenia]
-    U[Aplikacje do udostępniania plików w telefonie]
-    G[Zewnętrzne biblioteki grafik]
+    tworca["Twórca gier<br/>[osoba]"]
+    odbiorca["Odbiorca gry<br/>[osoba]"]
+    modde["Modde<br/>[system]"]
+    komunikator["Komunikator<br/>[system zewnętrzny]"]
+    os["System operacyjny urządzenia<br/>(Android, Windows)<br/>[system zewnętrzny]"]
 
-    T -->|układa program z klocków, testuje i eksportuje grę| S
-    O -->|otwiera i uruchamia grę| S
-    S -->|zapisuje i wczytuje projekty| P
-    S -->|przekazuje wyeksportowany plik gry| U
-    U -->|dostarcza plik gry| O
-    G -->|dostarczają postacie i tła| S
+    tworca -->|"układa program z klocków i uruchamia grę"| modde
+    tworca -->|"przesyła plik wyeksportowanej gry i plik projektu gry"| komunikator
+    komunikator -->|"dostarcza plik wyeksportowanej gry"| odbiorca
+    odbiorca -->|"uruchamia wyeksportowaną grę i steruje nią dotykiem"| modde
+    modde -->|"zapisuje i odczytuje pliki projektu gry"| os
+
+    classDef osoba fill:#08427b,color:#ffffff,stroke:#052e56
+    classDef system fill:#1168bd,color:#ffffff,stroke:#0b4884
+    classDef zewnetrzny fill:#8a8a8a,color:#ffffff,stroke:#5c5c5c
+    class tworca,odbiorca osoba
+    class modde system
+    class komunikator,os zewnetrzny
 ```
 
+## Elementy
 
-## Opis
+| Element | Typ | Opis | Właściciel |
+|---|---|---|---|
+| Twórca gier | osoba | Osoba, która w Modde układa program z klocków, testuje go i eksportuje własną grę. | — |
+| Odbiorca gry | osoba | Osoba, która otrzymuje gotową grę od Twórcy gier i uruchamia ją na swoim telefonie, bez możliwości jej zmieniania. | — |
+| Modde | system | Silnik do układania programu gry z klocków, uruchamiania gry, zapisu projektu gry i eksportu gry do pliku. | zespół projektu |
+| Komunikator | system zewnętrzny | Aplikacja, przez którą Twórca gier przesyła plik wyeksportowanej gry Odbiorcy gry lub plik projektu gry na inne urządzenie. | poza Silnikiem, bez integracji (P-02.3, P-03.4) |
+| System operacyjny urządzenia | system zewnętrzny | Android na telefonie lub Windows na komputerze; przechowuje pliki projektu gry i pliki wyeksportowanej gry na urządzeniu. | poza Silnikiem, dostawca systemu operacyjnego |
 
-| Element | Rola w diagramie |
-|---|---|
-| Twórca gier | Układa program z klocków, testuje grę i eksportuje ją. |
-| Odbiorca gry | Otrzymuje plik gry od twórcy i uruchamia go. |
-| Pamięć urządzenia | Miejsce, w którym system zapisuje projekty lokalnie. |
-| Aplikacje do udostępniania plików | Komunikatory, poczta i inne aplikacje telefonu, którymi wysyła się plik gry (nie są częścią systemu). |
-| Zewnętrzne biblioteki grafik | Źródło gotowych postaci i teł na otwartych licencjach. |
-
-## Zgodność z zakresem
-
-Diagram nie zawiera elementów z zakresu OUT (konta, platforma udostępniania gier, publikacja w sklepie z aplikacjami).
+Elementy zakresu OUT (konta użytkowników, sklep z aplikacjami, platforma udostępniania gier) celowo nie występują na diagramie.
