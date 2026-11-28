@@ -47,7 +47,9 @@ Wersja dokumentacji: 0.3
 Zob. [TEAM.md](TEAM.md) (po rosyjsku, dla zespołu).
 #### 1. Język
 
-- Komunikacja na czacie, commity i opisy PR – po rosyjsku.
+- Komunikacja na czacie – po rosyjsku.
+- Karty, commity, opisy PR i recenzje na GitHubie – po polsku.
+- Agent odpowiada po polsku w bloku kodu i po rosyjsku poza nim.
 - Komentarze w kodzie – po rosyjsku.
 - README.md i cały folder `docs/` (włączając kartę projektu) – po polsku: czyta je prowadzący.
 - Nazwy plików i folderów – alfabetem łacińskim, bez spacji i polskich liter (ą ć ę ł ń ó ś ź ż).
