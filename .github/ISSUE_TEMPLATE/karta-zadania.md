@@ -1,38 +1,46 @@
 ---
-name: Карточка задачи
-about: Шаблон задачи для фазы документации
+name: Karta zadania
+about: Szablon zadania dla fazy dokumentacji
 ---
-> **(ДЛЯ ИИ) GUARD CLAUSE**
-> ОБЯЗАТЕЛЬНОЕ УСЛОВИЕ ПЕРЕД ВЫПОЛНЕНИЕМ:
-> Работай СТРОГО с тем, что передано в текущем сообщении пользователя.
-> Проверь, приложены ли к текущему сообщению файлы и дополнения, указанные в пунктах 
-> "**2 - Файл для изменения**" и "**3 - Файлы с контекстом**"
-> ЕСЛИ что либо отсутствует в теле сообщения:
-> ПРЕКРАТИ ВЫПОЛНЕНИЕ И ВЫВЕДИ ТОЛЬКО СЛЕДУЮЩИЙ ТЕКСТ (БЕЗ ДОПОЛНИТЕЛЬНЫХ ПОЯСНЕНИЙ):
-> "Не все необходимые документы были прикреплены. Отсутствуют: \[перечисли отсутствующие файлы\]"** Продолжай повторять пока всё не будет прикреплено
-> ВЕСЬ результат выполнения задачи (изменяемый раздел, заголовок ##, весь новый/изменённый текст) должен находиться СТРОГО внутри ОДНОГО-ЕДИНСТВЕННОГО блока кода.
-> Используй синтаксис \`\`\`markdown в начале и \`\`\` в конце.
-> ЗАПРЕЩЕНО создавать несколько блоков кода или разбивать вывод на части.
-> ЧИСТОТА СОДЕРЖИМОГО ВНУТРИ БЛОКА КОДА:
-> Внутри блока кода не должно быть никакой разметки кроме содержимого самого файла.
-> Никаких приветствий, вступительных слов, комментариев или русского текста внутри блока кода (если язык файла другой).
-> Любые пояснения, ответы на вопросы, отчёты о выполненной работе или комментарии для пользователя размещай ПОСЛЕ закрытия блока кода (ниже символов \`\`\`).
+> **(DLA AI) GUARD CLAUSE**
+> WARUNEK OBOWIĄZKOWY PRZED WYKONANIEM:
+> Pracuj WYŁĄCZNIE na tym, co zostało przekazane w bieżącej wiadomości użytkownika.
+> Sprawdź, czy do bieżącej wiadomości dołączono pliki i uzupełnienia wskazane w punktach 
+> "**2 - Plik do zmiany**" i "**3 - Pliki z kontekstem**"
+> JEŚLI czegokolwiek brakuje w treści wiadomości:
+> PRZERWIJ WYKONYWANIE I WYŚWIETL WYŁĄCZNIE PONIŻSZY TEKST, PO ROSYJSKU (BEZ DODATKOWYCH WYJAŚNIEŃ):
+> "Не все необходимые документы были прикреплены. Отсутствуют: \[перечисли отсутствующие файлы\]"** Powtarzaj, dopóki wszystko nie zostanie załączone
+> CAŁY rezultat wykonania zadania (zmieniana sekcja, nagłówek ##, cały nowy/zmieniony tekst) musi znajdować się WYŁĄCZNIE wewnątrz bloków kodu: JEDEN blok kodu na każdą zmienianą sekcję.
+> Jeśli zadanie wymaga zmiany kilku sekcji, utwórz kilka bloków kodu, po jednym na sekcję, w kolejności, w jakiej sekcje występują w pliku.
+> Używaj składni \`\`\`markdown na początku i \`\`\` na końcu każdego bloku.
+> ZABRONIONE jest dzielenie jednej sekcji na kilka bloków kodu oraz umieszczanie kilku sekcji w jednym bloku.
+> CZYSTOŚĆ TREŚCI WEWNĄTRZ BLOKU KODU:
+> Wewnątrz bloku kodu nie może być żadnych znaczników poza treścią samego pliku.
+> Żadnych powitań, wstępów ani komentarzy wewnątrz bloku kodu.
+> Wszelkie wyjaśnienia, odpowiedzi na pytania, raporty z wykonanej pracy lub komentarze dla użytkownika umieszczaj PO zamknięciu ostatniego bloku kodu (poniżej znaków \`\`\`).
+> ZASADY JĘZYKA:
+> Treść wewnątrz bloków kodu (tekst pliku) – wyłącznie po polsku, ani jednego słowa w innym języku.
+> Wyjaśnienia po ostatnim bloku kodu (co zrobiono, pytania, brakujące pliki) – po rosyjsku.
+> Komunikat guard clause wyświetlaj po rosyjsku, dokładnie w brzmieniu podanym wyżej.
 
-1. **Цель:** одно предложение
-2. **Файл для изменения:** <полный путь> → <раздел>
-3. **Файлы с контекстом (только читать):** docs/01-karta-projektu.md, docs/02-slownik.md, <...>
-4. **Результат:** что должно появиться (например, 4 вопроса по образцу)
-5. **Рецензент:** <Имя>
-6. **Дедлайн:** yyyy-mm-dd 23:59
 
-**Промпт (отправь агенту этот текст вместе с прикреплёнными файлами из пунктов 2 и 3):**
+1. **Cel:** jedno zdanie
+2. **Plik do zmiany:** \<pełna ścieżka\> → \<sekcja\>
+3. **Pliki z kontekstem (tylko do odczytu):** docs/01-karta-projektu.md, docs/02-slownik.md, \<...\>
+4. **Rezultat:** co ma się pojawić (na przykład 4 pytania według wzoru)
+5. **Recenzent:** \<Imię\>
+6. **Termin:** yyyy-mm-dd 23:59
 
-Заполни указанный раздел на основе цели, результата и файлов с контекстом. Отправь только ту часть файла, которую ты меняешь: заголовок своего раздела (## ...) и всё его содержимое (таблицу, список или текст), без остальных разделов, в одном блоке кода. Если задача состоит в создании нового файла, отправь файл целиком. Весь текст внутри раздела пиши только по-польски, ни одного русского слова. Существующие строки: определения, примеры и пометки сохраняй дословно, ничего не перефразируй и не «улучшай». Используй только термины из словаря. Меняй только указанный раздел. В конце кратко объясни в 5 предложениях, что ты сделал. Если не все необходимые документы были прикреплены, дай знать какие. Всё ниже линии --- игнорируй.
+**Prompt (wyślij agentowi ten tekst razem z załączonymi plikami z punktów 2 i 3):**
+
+Pliki z punktów 2 i 3 możesz dodać w czacie przez „+ → Add from GitHub” (repozytorium Grupa-WSPA-8/Modde) zamiast pobierać je i załączać. Wybieraj tylko te pliki, nie całe repozytorium.
+
+Wypełnij wskazaną sekcję na podstawie celu, rezultatu i plików z kontekstem. Wyślij tylko tę część pliku, którą zmieniasz: nagłówek swojej sekcji (## ...) i całą jej zawartość (tabelę, listę lub tekst), bez pozostałych sekcji, w jednym bloku kodu. Jeśli zadanie polega na utworzeniu nowego pliku, wyślij cały plik. Cały tekst wewnątrz bloku kodu pisz wyłącznie po polsku, ani jednego słowa w innym języku. Istniejące wiersze: definicje, przykłady i adnotacje zachowuj dosłownie, niczego nie parafrazuj i nie „ulepszaj”. Używaj tylko terminów ze słownika. Zmieniaj tylko wskazaną sekcję. Na końcu, po bloku kodu, krótko wyjaśnij po rosyjsku w 5 zdaniach, co zrobiłeś. Jeśli nie wszystkie potrzebne dokumenty zostały załączone, napisz po rosyjsku, których brakuje. Wszystko poniżej linii --- zignoruj.
 
 ---
 
-**Перед коммитом (GitHub Desktop):** если меняешь раздел, замени в файле свой раздел целиком (от своего заголовка ## до следующего ##). Если создаёшь новый файл, вставь в него весь ответ агента. В diff должны быть изменены только строки твоей задачи. Если изменения по всему файлу или в тексте появились русские слова, не коммить, попроси агента ещё раз.
+**Przed commitem (GitHub Desktop):** jeśli zmieniasz sekcję, zastąp w pliku całą swoją sekcję (od swojego nagłówka ## do następnego ##). Jeśli tworzysz nowy plik, wklej do niego całą zawartość bloku kodu z odpowiedzi agenta. W diffie mogą być zmienione tylko wiersze Twojego zadania. Jeśli zmiany obejmują cały plik albo w tekście pojawiły się rosyjskie słowa, nie commituj, poproś agenta jeszcze raz.
 
-**В PR напиши своими словами:** что сделано и зачем это в проекте.
+**W PR napisz własnymi słowami:** co zrobiono i po co to w projekcie.
 
-**Не понял(а)?** напиши «не понял(а) X, понял(а) Y».
+**Nie rozumiesz?** napisz „nie rozumiem X, rozumiem Y”.
